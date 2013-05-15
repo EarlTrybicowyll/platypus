@@ -166,7 +166,7 @@ public class FirstPropNetStateMachine extends StateMachine {
         }
         System.out.println("Found " + baseFactors.size() + " base factors.");
         System.out.println("Found " + factors.size() + " factors.");
-        return factors;
+        return baseFactors;
     }
     
     private void recursiveFactorPropNet(Map<Component,Set<Component>> propFactors, Component currentComponent){
