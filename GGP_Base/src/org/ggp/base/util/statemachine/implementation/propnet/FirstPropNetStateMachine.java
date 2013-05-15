@@ -49,7 +49,6 @@ public class FirstPropNetStateMachine extends StateMachine {
     		propNet = OptimizingPropNetFactory.create(description);
     		roles = propNet.getRoles();
     		ordering = getOrdering();
-    		
     		Set<Set<Component>> factors = factorPropNet();
     	
     		
