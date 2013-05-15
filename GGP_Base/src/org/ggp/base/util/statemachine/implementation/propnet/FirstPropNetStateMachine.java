@@ -138,6 +138,11 @@ public class FirstPropNetStateMachine extends StateMachine {
 		return result;
 	}
 	
+	/* Factors the prop net, but only at the first or, rather than finding all of the factors */
+	private Set<Set<Component>> factorPropNetDumb(){
+		return null;
+	}
+	
 	private Set<Set<Component>> factorPropNet(){
         Map<Component,Set<Component>> propFactors = new HashMap<Component,Set<Component>>();
         
@@ -154,6 +159,12 @@ public class FirstPropNetStateMachine extends StateMachine {
         
         /* Iterate over base propositions to find distinct complete trees to create set of factors */
         Set<Set<Component>> factors = new HashSet<Set<Component>>(propFactors.values());
+        /*Just get the base components factors */
+        Set<Set<Component>> baseFactors = new HashSet<Set<Component>>();
+        for(Component comp : getBasePropositions()){
+        	baseFactors.add(propFactors.get(comp));
+        }
+        System.out.println("Found " + baseFactors.size() + " base factors.");
         System.out.println("Found " + factors.size() + " factors.");
         return factors;
     }
@@ -326,11 +337,16 @@ public class FirstPropNetStateMachine extends StateMachine {
 		if(basePropositions!=null){
 			return basePropositions.contains(base);
 		}
-		basePropositions = new HashSet<Component>();
-		for(Component s: propNet.getBasePropositions().values()){
-			basePropositions.add(s);
-		}
+		basePropositions = new HashSet<Component>(propNet.getBasePropositions().values());
 		return basePropositions.contains(base);
+	}
+	
+	private Set<Component> getBasePropositions(){
+		if(basePropositions!=null){
+			return basePropositions;
+		}
+		basePropositions = new HashSet<Component>(propNet.getBasePropositions().values());
+		return basePropositions;
 	}
 	
 	Set<Component> inputPropositions = null;
