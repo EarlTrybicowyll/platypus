@@ -38,6 +38,8 @@ public class FirstPropNetStateMachine extends StateMachine {
     /** The player roles */
     private List<Role> roles;
     
+    private List<PropNet> propNets;
+    
     /**
      * Initializes the PropNetStateMachine. You should compute the topological
      * ordering here. Additionally you may compute the initial state here, at
@@ -49,8 +51,8 @@ public class FirstPropNetStateMachine extends StateMachine {
     		propNet = OptimizingPropNetFactory.create(description);
     		roles = propNet.getRoles();
     		ordering = getOrdering();
-    		Set<Set<Component>> factors = factorPropNet();
-    	
+    		//Set<Set<Component>> factors = factorPropNet();
+    		propNets = factorPropNetDumb();
     		
     	}catch(InterruptedException ex){
     		ex.printStackTrace();
@@ -88,6 +90,8 @@ public class FirstPropNetStateMachine extends StateMachine {
     }
     
     private boolean propMarkP(Component p, boolean isRecur){
+    	if(p == null) return false; //for bad legals in mini propnets
+    	
     	if(p instanceof Proposition){ //should return false when reaching init?
     		Proposition prop = (Proposition)p;
     		if(isBase(prop) || isInput(prop) || prop == propNet.getInitProposition()){
@@ -96,6 +100,9 @@ public class FirstPropNetStateMachine extends StateMachine {
     			if(!isRecur){
     				return p.getValue();
     			}else{
+    				if(p.getInputs().size() == 0){
+    					return false; // more legals!!!!
+    				}
     				return propMarkP(p.getSingleInput(), isRecur);
     			}
     		}
@@ -121,7 +128,10 @@ public class FirstPropNetStateMachine extends StateMachine {
     	Set<GdlSentence> sentences = state.getContents();
 		Map<GdlSentence, Proposition> map = propNet.getBasePropositions();
     	for(GdlSentence s : sentences){
-    		map.get(s).setValue(true);
+    		Proposition c = map.get(s);
+    		if(c!=null){
+    			c.setValue(true);
+    		}
     	}
     }
 	/**
@@ -137,10 +147,153 @@ public class FirstPropNetStateMachine extends StateMachine {
 		return result;
 	}
 	
-	/* Factors the prop net, but only at the first or, rather than finding all of the factors */
-	private Set<Set<Component>> factorPropNetDumb(){
+	/* Factors the prop net, but only at the first OR, rather than finding all of the factors */
+	private List<PropNet> factorPropNetDumb(){
+		List<PropNet> propNets = new ArrayList<PropNet>();
+		/* Searching from the terminal component upwards, locate the first OR.  If an AND is found first, the game is deemed
+		 * unfactorable.
+		 */
+		Component bottomOr;
+		Component goalProposition = findWinningGoalNode();;
+		bottomOr =  findBottomOr(goalProposition);
+		
+		if(bottomOr!=null){
+			/* For each branch leading out of the bottom OR, create a set of all components on which the OR depends,
+			 * i.e. find all components in that branch.
+			 */
+			Set<Set<Component>> factors = new HashSet<Set<Component>>();
+			for(Component comp : bottomOr.getInputs()){
+				Set<Component> newFactor = new HashSet<Component>();
+				getTreeFromBottomComponent(comp,newFactor);
+				factors.add(newFactor);
+			}
+			
+			/* Check to see if any of these branches contain the same component.  If any do, naively rule the game as 
+			 * unfactorable (it may still be factorable, but not under our simple definition).
+			 */
+			Set<Component> allDistinctComponents = new HashSet<Component>();
+			int totalIndependentSetSize = 0;
+			for(Set<Component> factor : factors){
+				allDistinctComponents.addAll(factor);
+				totalIndependentSetSize+=factor.size();
+			}
+			
+			if(allDistinctComponents.size()<totalIndependentSetSize){
+				System.out.println("Found factors, but they weren't independent.");
+				propNets.add(propNet);
+			} else {
+				
+			/* Add the bottom of the propnet (bottom OR and below) to each branch*/
+				for(Component parent : bottomOr.getInputs()){
+					for(Set<Component> factor : factors){
+						if(factor.contains(parent)){
+							addBottomPropNet(factor,parent, goalProposition);
+							
+							factor.addAll(propNet.getLegalPropositions().get(roles.get(0)));
+						}		
+					}
+				}
+				
+			/* Convert sets of components to propnets */
+				for(Set<Component> factor : factors){
+					propNets.add(new PropNet(roles,factor));
+				}
+				
+				System.out.println("Successfully created " + propNets.size() + " factors.");				
+			}
+		}else{
+			
+			/* Only factor is the entire game, so add it */
+			propNets.add(propNet);
+			System.out.println("Found And instead of Or, so unfactorable.");
+		}
+		
+		return propNets;
+	}
+	
+	
+
+	/**
+	 * Explores tree until it finds AND or OR component, returning the component if an Or is found, null otherwise
+	 * @param terminalComp place to start in propnet
+	 * @return null if and was found, an Or component otherwise
+	 */
+	private Component findBottomOr(Component terminalComp){
+		Component currentComp = terminalComp;
+		while(true){
+			if(currentComp instanceof Or){
+				return currentComp;
+			} else if(currentComp instanceof And){
+				return null;
+			}
+			currentComp = currentComp.getSingleInput();
+		}
+	}
+	
+	/**
+	 * Adds all components on which the given starting component is dependent to a set of components
+	 * @param currentComponent
+	 * @param components set to contain all components when this function is complete
+	 */
+	private void getTreeFromBottomComponent(Component currentComponent, Set<Component> components){
+		components.add(currentComponent);
+		if(isBase(currentComponent) || isInput(currentComponent) || currentComponent == propNet.getInitProposition()){
+			return;
+		}
+		//System.out.println(startComponent);
+		for(Component parent : currentComponent.getInputs()){
+			getTreeFromBottomComponent(parent, components);
+		}
+	}
+	/**
+	 * In the given component, replace the final Or with a new dummy transition that maintains all the outputs of the old or
+	 * and adds a new terminal proposition for that component.
+	 * @param startComponent the bottom or's parent in this factor
+	 */
+	private void addBottomPropNet(Set<Component> factor, Component startComponent, Component goal){
+		Component dummyTransition = new Or();
+		dummyTransition.addInput(startComponent);
+		dummyTransition.addOutput(goal);
+		Component newTerminalProposition = new Proposition(propNet.getTerminalProposition().getName());
+		dummyTransition.addOutput(newTerminalProposition);
+		
+		startComponent.addOutput(dummyTransition);
+		
+		
+		factor.add(dummyTransition);
+		factor.add(newTerminalProposition);
+		factor.add(goal);
+		
+//		Component currentComponent = startComponent;
+//		
+//		while(true){
+//			factor.add(currentComponent);
+//			if(currentComponent==propNet.getTerminalProposition()) return;
+//			currentComponent = currentComponent.getSingleOutput();
+//		}
+	}
+	
+	/* Currently assumes single player */
+	private Proposition findWinningGoalNode(){
+		Set<Proposition> goalNodes = propNet.getGoalPropositions().get(getRoles().get(0));
+		for(Proposition prop : goalNodes){
+			if(getGoalValue(prop)==100){
+				return prop;
+			}
+		}
 		return null;
 	}
+	
+	
+	public void setPropNet(int index){
+		propNet = propNets.get(index);
+	}
+	
+	public int getNumPropNets(){
+		return propNets.size();
+	}
+	
+	
 	
 	private Set<Set<Component>> factorPropNet(){
         Map<Component,Set<Component>> propFactors = new HashMap<Component,Set<Component>>();
@@ -221,6 +374,7 @@ public class FirstPropNetStateMachine extends StateMachine {
         recursiveFactorPropNet(propFactors,parent);
     }
 	
+   
 	/**
 	 * Computes the goal for a role in the current state.
 	 * Should return the value of the goal proposition that
@@ -325,7 +479,8 @@ public class FirstPropNetStateMachine extends StateMachine {
 	private void markActions(List<GdlSentence> sentences){
 		Map<GdlSentence, Proposition> inputs = propNet.getInputPropositions();
 		for(GdlSentence sentence: sentences){
-			inputs.get(sentence).setValue(true);
+			Proposition c = inputs.get(sentence);
+			if(c!=null) c.setValue(true);
 		}
 	}
 	

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2013-05-17T21:09:33</date>
+  <millis>1368850173653</millis>
+  <sequence>0</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>platypus.logging.PlatypusLogger</class>
+  <method>getLogger</method>
+  <thread>10</thread>
+  <message>Added FileHandler to Logger</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:29</date>
+  <millis>1368850229075</millis>
+  <sequence>1</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:29</date>
+  <millis>1368850229075</millis>
+  <sequence>2</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is a</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:29</date>
+  <millis>1368850229076</millis>
+  <sequence>3</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:29</date>
+  <millis>1368850229076</millis>
+  <sequence>4</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Game solved!</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:29</date>
+  <millis>1368850229077</millis>
+  <sequence>5</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Choosing move a after minimax preliminary search</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:31</date>
+  <millis>1368850231593</millis>
+  <sequence>6</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:31</date>
+  <millis>1368850231594</millis>
+  <sequence>7</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is b</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:31</date>
+  <millis>1368850231595</millis>
+  <sequence>8</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:31</date>
+  <millis>1368850231595</millis>
+  <sequence>9</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Game solved!</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:31</date>
+  <millis>1368850231595</millis>
+  <sequence>10</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Choosing move b after minimax preliminary search</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:34</date>
+  <millis>1368850234116</millis>
+  <sequence>11</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:34</date>
+  <millis>1368850234116</millis>
+  <sequence>12</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is c</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:34</date>
+  <millis>1368850234117</millis>
+  <sequence>13</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:34</date>
+  <millis>1368850234117</millis>
+  <sequence>14</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Game solved!</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:34</date>
+  <millis>1368850234118</millis>
+  <sequence>15</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Choosing move c after minimax preliminary search</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:36</date>
+  <millis>1368850236627</millis>
+  <sequence>16</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:36</date>
+  <millis>1368850236627</millis>
+  <sequence>17</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is a</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:36</date>
+  <millis>1368850236628</millis>
+  <sequence>18</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:36</date>
+  <millis>1368850236629</millis>
+  <sequence>19</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Game solved!</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:36</date>
+  <millis>1368850236629</millis>
+  <sequence>20</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Choosing move a after minimax preliminary search</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:39</date>
+  <millis>1368850239143</millis>
+  <sequence>21</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:39</date>
+  <millis>1368850239144</millis>
+  <sequence>22</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is b</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:39</date>
+  <millis>1368850239144</millis>
+  <sequence>23</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:39</date>
+  <millis>1368850239144</millis>
+  <sequence>24</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Game solved!</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:39</date>
+  <millis>1368850239144</millis>
+  <sequence>25</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Choosing move b after minimax preliminary search</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:41</date>
+  <millis>1368850241654</millis>
+  <sequence>26</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:41</date>
+  <millis>1368850241654</millis>
+  <sequence>27</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is a</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:41</date>
+  <millis>1368850241655</millis>
+  <sequence>28</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:41</date>
+  <millis>1368850241655</millis>
+  <sequence>29</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Game solved!</message>
+</record>
+<record>
+  <date>2013-05-17T21:10:41</date>
+  <millis>1368850241656</millis>
+  <sequence>30</sequence>
+  <logger>game1368850173651</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Choosing move a after minimax preliminary search</message>
+</record>
+</log>

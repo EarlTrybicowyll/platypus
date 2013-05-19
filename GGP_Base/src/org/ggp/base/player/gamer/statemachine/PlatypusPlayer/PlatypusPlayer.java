@@ -103,6 +103,17 @@ public class PlatypusPlayer extends StateMachineGamer {
 		String roleFile = StateSave.save(getRole());
 		//System.out.println("State written to: " + stateFile);
 		//System.out.println("Role written to: " + roleFile);
+		
+		StateMachine machine = getStateMachine();
+		if(machine instanceof FirstPropNetStateMachine){
+			FirstPropNetStateMachine propMachine = (FirstPropNetStateMachine)machine;
+			for(int i = 0; i<propMachine.getNumPropNets(); i++){
+				propMachine.setPropNet(i);
+				if(propMachine.getLegalMoves(getCurrentState(), getRole()).size()>0){
+					break;
+				}
+			}
+		}
 
 		List<Move> moves = getStateMachine().getLegalMoves(getCurrentState(),
 				getRole());
