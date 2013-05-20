@@ -54,7 +54,8 @@ public class BryceMonteCarloTreeSearch extends Subplayer{
 				/* Estimate value of leaf */
 				double simulatedValue= 0;
 				MachineState simulatedTerminalState = stateMachine.performDepthCharge(targetNode.state, null);
-				simulatedValue+= stateMachine.getGoal(simulatedTerminalState, role) / 2;
+				simulatedValue+= stateMachine.getGoal(simulatedTerminalState, role);
+				//System.out.println("Terminal State: " + simulatedTerminalState);
 				numDepthCharges++;
 				/* Put the values back into the tree! */
 				backPropogate(targetNode,simulatedValue);
@@ -150,7 +151,7 @@ public class BryceMonteCarloTreeSearch extends Subplayer{
 	 */
 
 	public double selectFunction(GameNode node){
-		return node.value / node.numVisits +50*Math.sqrt(Math.log(node.parent.numVisits)/(double)node.numVisits);// + rand.nextDouble()*epsilon;
+		return node.value / node.numVisits +100*Math.sqrt(2*Math.log(node.parent.numVisits)/(double)node.numVisits);// + rand.nextDouble()*epsilon;
 	}
 
 	/**
@@ -177,7 +178,11 @@ public class BryceMonteCarloTreeSearch extends Subplayer{
 				List<List<Move>> jointMoves = stateMachine.getLegalJointMoves(startNode.state, role, move);
 
 				for(List<Move> jointMove : jointMoves){
+					Random r = new Random();
+					double result = r.nextDouble();
+					if(result<0.05) System.out.println("Starting State: " + startNode.state);
 					MachineState nextState = stateMachine.getNextState(startNode.state, jointMove);
+					
 					if (!stateMachine.isTerminal(nextState) || (stateMachine.isTerminal(nextState) && stateMachine.getGoal(nextState,role)!=0)) {
 						GameNode newChild = new GameNode(nextState);
 						startNode.children.add(newChild);
@@ -192,8 +197,16 @@ public class BryceMonteCarloTreeSearch extends Subplayer{
 		{
 
 
-
+			Random r = new Random();
+			double result = r.nextDouble();
+			if(result<0.05) System.out.println("Starting State: " + startNode.state);
 			List<MachineState> nextStates = stateMachine.getNextStates(startNode.state);
+			if(result<0.05) {
+				System.out.println("Ending States: " + nextStates);
+				for(MachineState state : nextStates){
+					System.out.println(state + " - Terminal - " + stateMachine.isTerminal(state));
+				}
+			}
 			/* Remove any terminal states where it gets a score of 0 from consideration */
 			for(MachineState state: nextStates){
 				GameNode newChild = new GameNode(state);

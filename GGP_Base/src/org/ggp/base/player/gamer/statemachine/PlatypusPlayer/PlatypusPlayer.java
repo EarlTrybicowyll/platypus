@@ -110,6 +110,7 @@ public class PlatypusPlayer extends StateMachineGamer {
 			for(int i = 0; i<propMachine.getNumPropNets(); i++){
 				propMachine.setPropNet(i);
 				if(propMachine.getLegalMoves(getCurrentState(), getRole()).size()>0){
+					System.out.println("PlatypusPlayer:  Found a valid factor.");
 					break;
 				}
 			}

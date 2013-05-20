@@ -52,6 +52,7 @@ public class FirstPropNetStateMachine extends StateMachine {
     		roles = propNet.getRoles();
     		ordering = getOrdering();
     		//Set<Set<Component>> factors = factorPropNet();
+    		System.out.println("PropNetStateMachine: starting to factor...");
     		propNets = factorPropNetDumb();
     		
     	}catch(InterruptedException ex){
@@ -90,7 +91,7 @@ public class FirstPropNetStateMachine extends StateMachine {
     }
     
     private boolean propMarkP(Component p, boolean isRecur){
-    	if(p == null) return false; //for bad legals in mini propnets
+    	//if(p == null) return false; //for bad legals in mini propnets
     	
     	if(p instanceof Proposition){ //should return false when reaching init?
     		Proposition prop = (Proposition)p;
@@ -100,9 +101,9 @@ public class FirstPropNetStateMachine extends StateMachine {
     			if(!isRecur){
     				return p.getValue();
     			}else{
-    				if(p.getInputs().size() == 0){
-    					return false; // more legals!!!!
-    				}
+//    				if(p.getInputs().size() == 0){
+//    					return false; // more legals!!!!
+//    				}
     				return propMarkP(p.getSingleInput(), isRecur);
     			}
     		}
@@ -164,7 +165,9 @@ public class FirstPropNetStateMachine extends StateMachine {
 			Set<Set<Component>> factors = new HashSet<Set<Component>>();
 			for(Component comp : bottomOr.getInputs()){
 				Set<Component> newFactor = new HashSet<Component>();
+				newFactor.add(bottomOr);//temporary to prevent the children of the first node from being added.
 				getTreeFromBottomComponent(comp,newFactor);
+				newFactor.remove(bottomOr);
 				factors.add(newFactor);
 			}
 			
@@ -189,10 +192,15 @@ public class FirstPropNetStateMachine extends StateMachine {
 						if(factor.contains(parent)){
 							addBottomPropNet(factor,parent, goalProposition);
 							
-							factor.addAll(propNet.getLegalPropositions().get(roles.get(0)));
+//							for(Proposition legal : propNet.getLegalPropositions().get(roles.get(0))){
+//								addLegalProposition(legal, factor);
+//								System.out.println("Adding " + legal + " as a proposition.");
+//							}
+							//factor.addAll(propNet.getLegalPropositions().get(roles.get(0)));
 						}		
 					}
 				}
+				//System.out.println("added " + propNet.getLegalPropositions().get(roles.get(0)));
 				
 			/* Convert sets of components to propnets */
 				for(Set<Component> factor : factors){
@@ -204,8 +212,27 @@ public class FirstPropNetStateMachine extends StateMachine {
 		}else{
 			
 			/* Only factor is the entire game, so add it */
-			propNets.add(propNet);
-			System.out.println("Found And instead of Or, so unfactorable.");
+			Set<Component> simplifiedPropNet = new HashSet<Component>();
+			getTreeFromBottomComponent(findWinningGoalNode(), simplifiedPropNet);
+			
+			
+			/* Add back in all the relevant legal moves */
+			Set<Component> relevantLegalProps = new HashSet<Component>();
+			for(Component comp : simplifiedPropNet){
+				if(isInput(comp)){
+					relevantLegalProps.add(propNet.getLegalInputMap().get(comp));
+				}
+			}
+			
+			simplifiedPropNet.addAll(relevantLegalProps);
+			
+			PropNet newPropNet = new PropNet(getRoles(),simplifiedPropNet);
+			
+			
+			propNets.add(newPropNet);
+			System.out.println("Original PropNet: " + propNet);
+			System.out.println("simplified PropNet : " + newPropNet);
+			System.out.println("Found And instead of Or, so unfactorable.  Attempted to simplify game.");
 		}
 		
 		return propNets;
@@ -221,6 +248,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 	private Component findBottomOr(Component terminalComp){
 		Component currentComp = terminalComp;
 		while(true){
+			System.out.println("Looking for bottom or:  " + currentComp);
 			if(currentComp instanceof Or){
 				return currentComp;
 			} else if(currentComp instanceof And){
@@ -236,14 +264,23 @@ public class FirstPropNetStateMachine extends StateMachine {
 	 * @param components set to contain all components when this function is complete
 	 */
 	private void getTreeFromBottomComponent(Component currentComponent, Set<Component> components){
+		if(components.contains(currentComponent)) return;
 		components.add(currentComponent);
-		if(isBase(currentComponent) || isInput(currentComponent) || currentComponent == propNet.getInitProposition()){
+		
+		for(Component child : currentComponent.getOutputs()){
+			getTreeFromBottomComponent(child,components);
+		}
+		
+		if(isBase(currentComponent) || isInput(currentComponent) || currentComponent == propNet.getInitProposition() || currentComponent ==propNet.getTerminalProposition()){
 			return;
 		}
 		//System.out.println(startComponent);
 		for(Component parent : currentComponent.getInputs()){
 			getTreeFromBottomComponent(parent, components);
 		}
+		
+		
+		
 	}
 	/**
 	 * In the given component, replace the final Or with a new dummy transition that maintains all the outputs of the old or
@@ -282,6 +319,24 @@ public class FirstPropNetStateMachine extends StateMachine {
 			}
 		}
 		return null;
+	}
+	
+	
+	/* Add legal proposition and logical connectors to the given factor.  Stops when it gets to a proposition */
+	private void addLegalProposition(Component legal, Set<Component> factor){
+		factor.add(legal);
+		for(Component parent : legal.getInputs()){
+			addLegalPropsRecursive(parent, factor);
+		}
+	}
+	/* Recursive helper function; used to avoid issues of the legal proposition itself being an actual proposition */
+	private void addLegalPropsRecursive(Component start, Set<Component> factor){
+		if(start instanceof Proposition) return;
+		factor.add(start);
+		System.out.println("Added " + start + " to a factor.");
+		for(Component parent : start.getInputs()){
+			addLegalPropsRecursive(parent,factor);
+		}
 	}
 	
 	
@@ -436,6 +491,9 @@ public class FirstPropNetStateMachine extends StateMachine {
 		List<Move> listMoves = new LinkedList<Move>();
 		markBases(state);
 		Set<Proposition> legals = propNet.getLegalPropositions().get(role);
+		if (legals == null) {
+			return new ArrayList<Move>();
+		}
 		for(Proposition legal: legals){
 			if(propMarkPRecursive(legal)){
 				listMoves.add(getMoveFromProposition(legal));
@@ -454,7 +512,11 @@ public class FirstPropNetStateMachine extends StateMachine {
 	public synchronized MachineState getNextState(MachineState state, List<Move> moves)
 	throws TransitionDefinitionException {
 		//(moves.toString() + " "+state.toString());
-		if(moves == null) return state; //not sure exactly what this should be
+		if(moves == null) {
+			System.out.println("Moves is null :(");
+			System.out.println(state);
+			return state; //not sure exactly what this should be
+		}
 		
 		List<GdlSentence> sentences = toDoes(moves);
 		
