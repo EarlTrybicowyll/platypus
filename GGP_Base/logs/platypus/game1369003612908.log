@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2013-05-19T15:46:52</date>
+  <millis>1369003612912</millis>
+  <sequence>0</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>platypus.logging.PlatypusLogger</class>
+  <method>getLogger</method>
+  <thread>10</thread>
+  <message>Added FileHandler to Logger</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:23</date>
+  <millis>1369003643242</millis>
+  <sequence>1</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:23</date>
+  <millis>1369003643242</millis>
+  <sequence>2</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>sure move is null: Minimax did not result in anything</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:23</date>
+  <millis>1369003643243</millis>
+  <sequence>3</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:23</date>
+  <millis>1369003643243</millis>
+  <sequence>4</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9474</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:33</date>
+  <millis>1369003653718</millis>
+  <sequence>5</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:36</date>
+  <millis>1369003656230</millis>
+  <sequence>6</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:36</date>
+  <millis>1369003656231</millis>
+  <sequence>7</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>sure move is null: Minimax did not result in anything</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:36</date>
+  <millis>1369003656231</millis>
+  <sequence>8</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:36</date>
+  <millis>1369003656232</millis>
+  <sequence>9</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9496</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:46</date>
+  <millis>1369003666729</millis>
+  <sequence>10</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:49</date>
+  <millis>1369003669240</millis>
+  <sequence>11</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:49</date>
+  <millis>1369003669241</millis>
+  <sequence>12</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>sure move is null: Minimax did not result in anything</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:49</date>
+  <millis>1369003669242</millis>
+  <sequence>13</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:49</date>
+  <millis>1369003669242</millis>
+  <sequence>14</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9496</message>
+</record>
+<record>
+  <date>2013-05-19T15:47:59</date>
+  <millis>1369003679739</millis>
+  <sequence>15</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:02</date>
+  <millis>1369003682252</millis>
+  <sequence>16</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:02</date>
+  <millis>1369003682252</millis>
+  <sequence>17</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>sure move is null: Minimax did not result in anything</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:02</date>
+  <millis>1369003682252</millis>
+  <sequence>18</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:02</date>
+  <millis>1369003682252</millis>
+  <sequence>19</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9498</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:12</date>
+  <millis>1369003692751</millis>
+  <sequence>20</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:15</date>
+  <millis>1369003695263</millis>
+  <sequence>21</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:15</date>
+  <millis>1369003695264</millis>
+  <sequence>22</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>sure move is null: Minimax did not result in anything</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:15</date>
+  <millis>1369003695264</millis>
+  <sequence>23</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:15</date>
+  <millis>1369003695264</millis>
+  <sequence>24</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9498</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:25</date>
+  <millis>1369003705763</millis>
+  <sequence>25</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:28</date>
+  <millis>1369003708275</millis>
+  <sequence>26</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:28</date>
+  <millis>1369003708276</millis>
+  <sequence>27</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>sure move is null: Minimax did not result in anything</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:28</date>
+  <millis>1369003708276</millis>
+  <sequence>28</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-19T15:48:28</date>
+  <millis>1369003708277</millis>
+  <sequence>29</sequence>
+  <logger>game1369003612908</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9496</message>
+</record>
+</log>

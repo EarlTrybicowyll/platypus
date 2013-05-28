@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2013-05-27T20:56:54</date>
+  <millis>1369713414064</millis>
+  <sequence>0</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>platypus.logging.PlatypusLogger</class>
+  <method>getLogger</method>
+  <thread>10</thread>
+  <message>Added FileHandler to Logger</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:12</date>
+  <millis>1369713432275</millis>
+  <sequence>1</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:12</date>
+  <millis>1369713432275</millis>
+  <sequence>2</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( turn counter )</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:12</date>
+  <millis>1369713432276</millis>
+  <sequence>3</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:12</date>
+  <millis>1369713432276</millis>
+  <sequence>4</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:12</date>
+  <millis>1369713432276</millis>
+  <sequence>5</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9476</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:21</date>
+  <millis>1369713441753</millis>
+  <sequence>6</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: thrust value: 49.99766379829988 visited: 575229</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:21</date>
+  <millis>1369713441753</millis>
+  <sequence>7</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( turn clock ) value: 5.150251326373043 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:21</date>
+  <millis>1369713441754</millis>
+  <sequence>8</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( turn counter ) value: 6.628652471364203 visited: 10</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:22</date>
+  <millis>1369713442753</millis>
+  <sequence>9</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:22</date>
+  <millis>1369713442753</millis>
+  <sequence>10</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:25</date>
+  <millis>1369713445268</millis>
+  <sequence>11</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:25</date>
+  <millis>1369713445268</millis>
+  <sequence>12</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( turn counter )</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:25</date>
+  <millis>1369713445269</millis>
+  <sequence>13</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:25</date>
+  <millis>1369713445269</millis>
+  <sequence>14</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:25</date>
+  <millis>1369713445269</millis>
+  <sequence>15</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:34</date>
+  <millis>1369713454765</millis>
+  <sequence>16</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: thrust value: 3.62780120410385 visited: 2</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:34</date>
+  <millis>1369713454765</millis>
+  <sequence>17</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( turn clock ) value: 49.99576348327545 visited: 519662</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:34</date>
+  <millis>1369713454766</millis>
+  <sequence>18</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( turn counter ) value: 5.130485664437109 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:35</date>
+  <millis>1369713455765</millis>
+  <sequence>19</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:35</date>
+  <millis>1369713455765</millis>
+  <sequence>20</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( turn clock )</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:38</date>
+  <millis>1369713458286</millis>
+  <sequence>21</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:38</date>
+  <millis>1369713458287</millis>
+  <sequence>22</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( turn clock )</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:38</date>
+  <millis>1369713458287</millis>
+  <sequence>23</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:38</date>
+  <millis>1369713458287</millis>
+  <sequence>24</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:38</date>
+  <millis>1369713458287</millis>
+  <sequence>25</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:47</date>
+  <millis>1369713467783</millis>
+  <sequence>26</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: thrust value: 3.672129922730625 visited: 2</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:47</date>
+  <millis>1369713467784</millis>
+  <sequence>27</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( turn clock ) value: 50.00313428402642 visited: 718221</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:47</date>
+  <millis>1369713467784</millis>
+  <sequence>28</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( turn counter ) value: 5.193175939521716 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:48</date>
+  <millis>1369713468783</millis>
+  <sequence>29</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:48</date>
+  <millis>1369713468784</millis>
+  <sequence>30</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( turn clock )</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:51</date>
+  <millis>1369713471300</millis>
+  <sequence>31</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:51</date>
+  <millis>1369713471301</millis>
+  <sequence>32</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:51</date>
+  <millis>1369713471301</millis>
+  <sequence>33</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:51</date>
+  <millis>1369713471301</millis>
+  <sequence>34</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:57:51</date>
+  <millis>1369713471301</millis>
+  <sequence>35</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:00</date>
+  <millis>1369713480796</millis>
+  <sequence>36</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: thrust value: 50.004843341473524 visited: 877863</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:00</date>
+  <millis>1369713480796</millis>
+  <sequence>37</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( turn clock ) value: 5.231682184800549 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:00</date>
+  <millis>1369713480797</millis>
+  <sequence>38</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( turn counter ) value: 5.231682184800549 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:01</date>
+  <millis>1369713481796</millis>
+  <sequence>39</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:01</date>
+  <millis>1369713481796</millis>
+  <sequence>40</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:04</date>
+  <millis>1369713484317</millis>
+  <sequence>41</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:04</date>
+  <millis>1369713484318</millis>
+  <sequence>42</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:04</date>
+  <millis>1369713484318</millis>
+  <sequence>43</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:04</date>
+  <millis>1369713484318</millis>
+  <sequence>44</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:04</date>
+  <millis>1369713484319</millis>
+  <sequence>45</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:13</date>
+  <millis>1369713493813</millis>
+  <sequence>46</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: thrust value: 49.9971118550756 visited: 587882</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:13</date>
+  <millis>1369713493814</millis>
+  <sequence>47</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( turn clock ) value: 5.154471191018834 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:13</date>
+  <millis>1369713493814</millis>
+  <sequence>48</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( turn counter ) value: 5.154471191018834 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:14</date>
+  <millis>1369713494813</millis>
+  <sequence>49</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:14</date>
+  <millis>1369713494814</millis>
+  <sequence>50</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:17</date>
+  <millis>1369713497331</millis>
+  <sequence>51</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:17</date>
+  <millis>1369713497332</millis>
+  <sequence>52</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:17</date>
+  <millis>1369713497332</millis>
+  <sequence>53</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:17</date>
+  <millis>1369713497332</millis>
+  <sequence>54</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:17</date>
+  <millis>1369713497379</millis>
+  <sequence>55</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9448</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:26</date>
+  <millis>1369713506828</millis>
+  <sequence>56</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: thrust value: 50.0047504522346 visited: 776931</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:26</date>
+  <millis>1369713506828</millis>
+  <sequence>57</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( turn clock ) value: 5.208283917694399 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:26</date>
+  <millis>1369713506829</millis>
+  <sequence>58</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( turn counter ) value: 5.208283917694399 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:27</date>
+  <millis>1369713507828</millis>
+  <sequence>59</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:27</date>
+  <millis>1369713507828</millis>
+  <sequence>60</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:30</date>
+  <millis>1369713510349</millis>
+  <sequence>61</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:30</date>
+  <millis>1369713510349</millis>
+  <sequence>62</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( turn clock )</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:30</date>
+  <millis>1369713510349</millis>
+  <sequence>63</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:30</date>
+  <millis>1369713510350</millis>
+  <sequence>64</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:30</date>
+  <millis>1369713510350</millis>
+  <sequence>65</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:39</date>
+  <millis>1369713519845</millis>
+  <sequence>66</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: thrust value: 3.702607897295897 visited: 2</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:39</date>
+  <millis>1369713519845</millis>
+  <sequence>67</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( turn clock ) value: 50.00518824965457 visited: 899236</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:39</date>
+  <millis>1369713519845</millis>
+  <sequence>68</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( turn counter ) value: 5.236278304505586 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:40</date>
+  <millis>1369713520844</millis>
+  <sequence>69</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:40</date>
+  <millis>1369713520845</millis>
+  <sequence>70</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( turn clock )</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:43</date>
+  <millis>1369713523365</millis>
+  <sequence>71</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:43</date>
+  <millis>1369713523365</millis>
+  <sequence>72</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( turn clock )</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:43</date>
+  <millis>1369713523365</millis>
+  <sequence>73</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:43</date>
+  <millis>1369713523366</millis>
+  <sequence>74</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:43</date>
+  <millis>1369713523366</millis>
+  <sequence>75</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:52</date>
+  <millis>1369713532861</millis>
+  <sequence>76</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: thrust value: 50.005212613826004 visited: 976416</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:52</date>
+  <millis>1369713532862</millis>
+  <sequence>77</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( turn clock ) value: 5.251980412158545 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:52</date>
+  <millis>1369713532862</millis>
+  <sequence>78</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( turn counter ) value: 36.365565638071715 visited: 3</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:53</date>
+  <millis>1369713533861</millis>
+  <sequence>79</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:53</date>
+  <millis>1369713533862</millis>
+  <sequence>80</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: thrust</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:56</date>
+  <millis>1369713536386</millis>
+  <sequence>81</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:56</date>
+  <millis>1369713536386</millis>
+  <sequence>82</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( turn clock )</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:56</date>
+  <millis>1369713536386</millis>
+  <sequence>83</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:56</date>
+  <millis>1369713536387</millis>
+  <sequence>84</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T20:58:56</date>
+  <millis>1369713536387</millis>
+  <sequence>85</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9491</message>
+</record>
+<record>
+  <date>2013-05-27T20:59:05</date>
+  <millis>1369713545878</millis>
+  <sequence>86</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: thrust value: 50.00553972043018 visited: 892995</message>
+</record>
+<record>
+  <date>2013-05-27T20:59:05</date>
+  <millis>1369713545879</millis>
+  <sequence>87</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( turn clock ) value: 5.234947873706952 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:59:05</date>
+  <millis>1369713545879</millis>
+  <sequence>88</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch_NoMiniMax</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( turn counter ) value: 5.234947873706952 visited: 1</message>
+</record>
+<record>
+  <date>2013-05-27T20:59:06</date>
+  <millis>1369713546878</millis>
+  <sequence>89</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T20:59:06</date>
+  <millis>1369713546879</millis>
+  <sequence>90</sequence>
+  <logger>game1369713414060</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: thrust</message>
+</record>
+</log>

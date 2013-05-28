@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2013-05-21T22:56:10</date>
+  <millis>1369202170790</millis>
+  <sequence>0</sequence>
+  <logger>game1369202170786</logger>
+  <level>INFO</level>
+  <class>platypus.logging.PlatypusLogger</class>
+  <method>getLogger</method>
+  <thread>10</thread>
+  <message>Added FileHandler to Logger</message>
+</record>
+<record>
+  <date>2013-05-21T22:56:32</date>
+  <millis>1369202192787</millis>
+  <sequence>1</sequence>
+  <logger>game1369202170786</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-21T22:56:32</date>
+  <millis>1369202192788</millis>
+  <sequence>2</sequence>
+  <logger>game1369202170786</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( press 0 1 2 )</message>
+</record>
+<record>
+  <date>2013-05-21T22:56:32</date>
+  <millis>1369202192788</millis>
+  <sequence>3</sequence>
+  <logger>game1369202170786</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-21T22:56:32</date>
+  <millis>1369202192788</millis>
+  <sequence>4</sequence>
+  <logger>game1369202170786</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-21T22:56:32</date>
+  <millis>1369202192789</millis>
+  <sequence>5</sequence>
+  <logger>game1369202170786</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9469</message>
+</record>
+</log>
