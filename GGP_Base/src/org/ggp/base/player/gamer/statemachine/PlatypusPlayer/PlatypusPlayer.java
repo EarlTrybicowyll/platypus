@@ -23,6 +23,7 @@ import org.ggp.base.util.statemachine.implementation.prover.ProverStateMachine;
 import platypus.logging.PlatypusLogger;
 import platypus.utils.StateSave;
 import players.BryceMonteCarloTreeSearch;
+import players.BryceMonteCarloTreeSearch_NoMiniMax;
 import players.PlayerResult;
 import players.TerminalStateProximity;
 import players.WinCheckBoundedSearch;
@@ -43,6 +44,7 @@ public class PlatypusPlayer extends StateMachineGamer {
 	@Override
 	public StateMachine getInitialStateMachine() {
 		// TODO Auto-generated method stub
+		//return getStateMachine
 		return new FirstPropNetStateMachine();
 	}
 
@@ -183,7 +185,7 @@ public class PlatypusPlayer extends StateMachineGamer {
 		}
 		
 
-		Thread playerThread = new Thread(new BryceMonteCarloTreeSearch(
+		Thread playerThread = new Thread(new BryceMonteCarloTreeSearch_NoMiniMax(
 				getStateMachine(), getRole(), playerResult, getCurrentState(),
 				log));
 		log.info("Starting Monte Carlo");

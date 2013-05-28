@@ -199,14 +199,14 @@ public class BryceMonteCarloTreeSearch extends Subplayer{
 
 			Random r = new Random();
 			double result = r.nextDouble();
-			if(result<0.05) System.out.println("Starting State: " + startNode.state);
+			//if(result<0.05) System.out.println("Starting State: " + startNode.state);
 			List<MachineState> nextStates = stateMachine.getNextStates(startNode.state);
-			if(result<0.05) {
-				System.out.println("Ending States: " + nextStates);
-				for(MachineState state : nextStates){
-					System.out.println(state + " - Terminal - " + stateMachine.isTerminal(state));
-				}
-			}
+//			if(result<0.05) {
+//				System.out.println("Ending States: " + nextStates);
+//				for(MachineState state : nextStates){
+//					System.out.println(state + " - Terminal - " + stateMachine.isTerminal(state));
+//				}
+//			}
 			/* Remove any terminal states where it gets a score of 0 from consideration */
 			for(MachineState state: nextStates){
 				GameNode newChild = new GameNode(state);

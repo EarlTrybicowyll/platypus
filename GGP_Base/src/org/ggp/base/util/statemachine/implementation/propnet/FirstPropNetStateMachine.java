@@ -38,8 +38,16 @@ public class FirstPropNetStateMachine extends StateMachine {
     /** The player roles */
     private List<Role> roles;
     
-    private List<PropNet> propNets;
+    private List<PropNetInfo> propNets;
     
+    private class PropNetInfo{
+    	PropNet prop;
+    	List<Proposition> ordering;
+    	public PropNetInfo(PropNet propN, List<Proposition> order){
+    		prop = propN;
+    		ordering = order;
+    	}
+    }
     /**
      * Initializes the PropNetStateMachine. You should compute the topological
      * ordering here. Additionally you may compute the initial state here, at
@@ -49,11 +57,16 @@ public class FirstPropNetStateMachine extends StateMachine {
     public synchronized void initialize(List<Gdl> description) {
     	try{
     		propNet = OptimizingPropNetFactory.create(description);
+    		propNet.renderToFile("LastGamePlayedPropNet.dot");
     		roles = propNet.getRoles();
-    		ordering = getOrdering();
+    		ordering = getOrdering(propNet);
+    		for(Proposition p : ordering){
+    			System.out.println(p.getName());
+    		}
     		//Set<Set<Component>> factors = factorPropNet();
     		System.out.println("PropNetStateMachine: starting to factor...");
     		propNets = factorPropNetDumb();
+    		System.out.println("Found "+propNets.size()+" factors.");
     		
     	}catch(InterruptedException ex){
     		ex.printStackTrace();
@@ -101,9 +114,10 @@ public class FirstPropNetStateMachine extends StateMachine {
     			if(!isRecur){
     				return p.getValue();
     			}else{
-//    				if(p.getInputs().size() == 0){
-//    					return false; // more legals!!!!
-//    				}
+    				if(p.getInputs().size() == 0){
+    					System.out.println("Returning false: "+((Proposition)p).getName());
+    					return false; // more legals!!!!
+    				}
     				return propMarkP(p.getSingleInput(), isRecur);
     			}
     		}
@@ -144,25 +158,25 @@ public class FirstPropNetStateMachine extends StateMachine {
 		markBases(state);
 		boolean result = propMarkPRecursive(propNet.getTerminalProposition());
 		clearPropNet();
-		//System.out.println("The result: "+result);
 		return result;
 	}
 	
 	/* Factors the prop net, but only at the first OR, rather than finding all of the factors */
-	private List<PropNet> factorPropNetDumb(){
+	private List<PropNetInfo> factorPropNetDumb(){
 		List<PropNet> propNets = new ArrayList<PropNet>();
 		/* Searching from the terminal component upwards, locate the first OR.  If an AND is found first, the game is deemed
 		 * unfactorable.
 		 */
 		Component bottomOr;
-		Component goalProposition = findWinningGoalNode();;
+		Component goalProposition = findWinningGoalNode();
 		bottomOr =  findBottomOr(goalProposition);
 		
 		if(bottomOr!=null){
 			/* For each branch leading out of the bottom OR, create a set of all components on which the OR depends,
 			 * i.e. find all components in that branch.
 			 */
-			Set<Set<Component>> factors = new HashSet<Set<Component>>();
+			List<Set<Component>> factors = new ArrayList<Set<Component>>();
+			System.out.println(bottomOr.getInputs().size());
 			for(Component comp : bottomOr.getInputs()){
 				Set<Component> newFactor = new HashSet<Component>();
 				newFactor.add(bottomOr);//temporary to prevent the children of the first node from being added.
@@ -170,7 +184,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 				newFactor.remove(bottomOr);
 				factors.add(newFactor);
 			}
-			
+			System.out.println("Factors size: " + factors.size());
 			/* Check to see if any of these branches contain the same component.  If any do, naively rule the game as 
 			 * unfactorable (it may still be factorable, but not under our simple definition).
 			 */
@@ -203,11 +217,17 @@ public class FirstPropNetStateMachine extends StateMachine {
 				//System.out.println("added " + propNet.getLegalPropositions().get(roles.get(0)));
 				
 			/* Convert sets of components to propnets */
+				int i = 0;
 				for(Set<Component> factor : factors){
-					propNets.add(new PropNet(roles,factor));
+					System.out.println("adding new factor");
+					PropNet newNet = new PropNet(roles, factor);
+					propNets.add(newNet);
+					newNet.renderToFile("LastPlayedGameFactor" + i + ".dot");
+					i++;
 				}
 				
-				System.out.println("Successfully created " + propNets.size() + " factors.");				
+				
+				System.out.println("Successfully created " + propNets.size() + " factors.");			
 			}
 		}else{
 			
@@ -215,27 +235,46 @@ public class FirstPropNetStateMachine extends StateMachine {
 			Set<Component> simplifiedPropNet = new HashSet<Component>();
 			getTreeFromBottomComponent(findWinningGoalNode(), simplifiedPropNet);
 			
+		
 			
 			/* Add back in all the relevant legal moves */
 			Set<Component> relevantLegalProps = new HashSet<Component>();
 			for(Component comp : simplifiedPropNet){
 				if(isInput(comp)){
-					relevantLegalProps.add(propNet.getLegalInputMap().get(comp));
+					Proposition p = (Proposition) propNet.getLegalInputMap().get(comp);
+					System.out.println("Adding back legals: "+p.getName());
+					relevantLegalProps.add(p);
+					//relevantLegalProps.addAll(legalComponents); (should they be in ordering?)
 				}
 			}
 			
 			simplifiedPropNet.addAll(relevantLegalProps);
+			//simplifiedPropNet.add(propNet.getInitProposition());
 			
 			PropNet newPropNet = new PropNet(getRoles(),simplifiedPropNet);
 			
-			
 			propNets.add(newPropNet);
-			System.out.println("Original PropNet: " + propNet);
-			System.out.println("simplified PropNet : " + newPropNet);
+			System.out.println("Original PropNet: " + propNet.getSize());
+			System.out.println("simplified PropNet : " + newPropNet.getSize());
 			System.out.println("Found And instead of Or, so unfactorable.  Attempted to simplify game.");
 		}
+		List<PropNetInfo> list = new ArrayList<PropNetInfo>();
+		PropNet old = propNet;
+		for(PropNet p: propNets){
+			List<Proposition> propOrder = getOrdering(p);
+			System.out.println("Ordering size: "+propOrder.size()+ " and is: "+propOrder.toString());
+			PropNetInfo info = new PropNetInfo(p, propOrder);
+			list.add(info);
+			for(Proposition prop: propOrder){
+				//System.out.println("Proposition: "+prop.getName());
+			}
+
+		}
+		propNet = old;
+		basePropositions = null;
+		inputPropositions = null;
 		
-		return propNets;
+		return list;
 	}
 	
 	
@@ -267,11 +306,13 @@ public class FirstPropNetStateMachine extends StateMachine {
 		if(components.contains(currentComponent)) return;
 		components.add(currentComponent);
 		
+		if(currentComponent==propNet.getInitProposition()) return;
+		
 		for(Component child : currentComponent.getOutputs()){
 			getTreeFromBottomComponent(child,components);
 		}
 		
-		if(isBase(currentComponent) || isInput(currentComponent) || currentComponent == propNet.getInitProposition() || currentComponent ==propNet.getTerminalProposition()){
+		if(isInput(currentComponent)){
 			return;
 		}
 		//System.out.println(startComponent);
@@ -341,7 +382,11 @@ public class FirstPropNetStateMachine extends StateMachine {
 	
 	
 	public void setPropNet(int index){
-		propNet = propNets.get(index);
+		propNet = propNets.get(index).prop;
+		ordering = propNets.get(index).ordering;
+		System.out.println("Changing to ordering with size: "+ordering.size());
+		basePropositions = null;
+		inputPropositions = null;
 	}
 	
 	public int getNumPropNets(){
@@ -524,9 +569,9 @@ public class FirstPropNetStateMachine extends StateMachine {
 		markBases(state);
 		
 		//HashMap<Proposition, Boolean> next = new HashMap<Proposition, Boolean>();
-
 		for(Proposition p: ordering){
 			p.setValue(propMarkPNonRecursive(p.getSingleInput()));
+
 		}
 		//for(Proposition p: next.keySet()){
 		//	p.setValue(next.get(p));
@@ -535,6 +580,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 		//if(nextState)
 		//System.out.println("Next State Contents:"+nextState.getContents().toString());
 		clearPropNet();
+		String stateString = nextState.getContents().toString();
 		return nextState;
 	}
 	
@@ -579,15 +625,11 @@ public class FirstPropNetStateMachine extends StateMachine {
 		return inputPropositions.contains(base);
 	}
 	
-	
-	private List<Component> leaves = null;
-	private List<Component> getLeaves(){
-		if(leaves!=null){
-			return leaves;
-		}
-		leaves = new LinkedList<Component>();
-		leaves.addAll(propNet.getBasePropositions().values());
-		for(Component c: propNet.getComponents()){
+	private List<Component> getLeaves(PropNet prop){
+		List<Component> leaves = new LinkedList<Component>();
+		leaves.addAll(prop.getBasePropositions().values());
+		for(Component c: prop.getComponents()){
+			
 			if(c.getInputs().size() == 0){
 				leaves.add(c);
 			}
@@ -638,21 +680,23 @@ public class FirstPropNetStateMachine extends StateMachine {
 	 * 
 	 * @return The order in which the truth values of propositions need to be set.
 	 */
-	public synchronized List<Proposition> getOrdering()
+	
+	public synchronized List<Proposition> getOrdering(PropNet prop)
 	{
 	    // List to contain the topological ordering.
 	    List<Proposition> order = new LinkedList<Proposition>();
 	    				
 		// All of the components in the PropNet
-		List<Component> components = new ArrayList<Component>(propNet.getComponents());
+		List<Component> components = new ArrayList<Component>(prop.getComponents());
 		
 		// All of the propositions in the PropNet.		
-		List<Component> noIncoming = getLeaves();
+		List<Component> noIncoming = getLeaves(prop);
 		List<Link> seenLinks = new LinkedList<Link>();
 		
 		while(noIncoming.size() > 0){
 			Component node = noIncoming.remove(0);
-			if(node instanceof Proposition && !isBase(node) && !isInput(node) && node != propNet.getInitProposition()){
+			
+			if(node instanceof Proposition && !isBase(node) && !isInput(node) && node != prop.getInitProposition()){
 					order.add((Proposition)node);
 			}
 			Set<Component> outputs = node.getOutputs();
@@ -736,9 +780,11 @@ public class FirstPropNetStateMachine extends StateMachine {
 	 */	
 	public synchronized MachineState getStateFromBase()
 	{
+		
 		Set<GdlSentence> contents = new HashSet<GdlSentence>();
 		for (Proposition p : propNet.getBasePropositions().values())
 		{
+
 			p.setValue(p.getSingleInput().getValue());
 			if (p.getValue())
 			{
