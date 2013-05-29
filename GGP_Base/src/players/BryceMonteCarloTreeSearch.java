@@ -237,16 +237,3 @@ public class BryceMonteCarloTreeSearch extends Subplayer{
 }
 
 
-
-class GameNode{
-	List<GameNode> children = null;
-	GameNode parent = null;
-	double value = 0;
-	int numVisits = 0;
-	MachineState state;
-	public GameNode(MachineState state){
-		this.state = state;
-	}
-}
-
-

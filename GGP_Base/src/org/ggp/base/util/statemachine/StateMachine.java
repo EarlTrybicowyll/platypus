@@ -236,5 +236,54 @@ public abstract class StateMachine
         if(theDepth != null)
             theDepth[0] = nDepth;
         return state;
-    }    
+    }   
+    
+    /**
+     * Simulates playing the game assuming the players are smart enough to avoid playing moves that will cause them to immediately lose.
+     * At each stage, randomly generates a next state, but regenerates the state up to MAX_RETRIES times if any player immediately lost
+     * as a result of the move.
+     * @param state
+     * @param theDepth
+     * @return
+     * @throws TransitionDefinitionException
+     * @throws MoveDefinitionException
+     * @throws GoalDefinitionException
+     */
+    
+    public MachineState performDepthChargeNotDumbOpponent(MachineState state, int[] theDepth) throws TransitionDefinitionException, MoveDefinitionException, GoalDefinitionException{  
+        int nDepth = 0;
+        while(!isTerminal(state)) {
+            nDepth++;
+            /* Number of times the algorithm attempts to find a reasonable move before quitting */
+            int MAX_RETRIES = 16;
+            MachineState previousState = state;
+            List<List<Move>> jointMoves = getLegalJointMoves(previousState);
+            for(int i = 0; i<jointMoves.size(); i++){
+            	state = getNextState(state, jointMoves.get(i));
+            	if(stateWasReasonableMove(state) || i==MAX_RETRIES) break;
+            }
+        }
+        if(theDepth != null)
+            theDepth[0] = nDepth;
+        return state;
+    }   
+    
+    /**
+     * Returns false if any player would have avoided this move due to it giving him a score of 0.  Assumes each player
+     * looks only at this particular move and not any further in the game (so only terminal states are considered).
+     * @param state
+     * @return
+     * @throws GoalDefinitionException 
+     */
+    private boolean stateWasReasonableMove(MachineState state) throws GoalDefinitionException{
+    	if(!isTerminal(state)) return true;
+    	for(Role role : getRoles()){
+    		//try{
+    			if(getGoal(state,role)==0) return false;
+    		//} catch(GoalDefinitionException e){
+    		//}
+    	}
+    	
+    	return true;
+    }
 }

@@ -74,8 +74,9 @@ public class BryceMonteCarloTreeSearch_NoMiniMax extends Subplayer{
 
 				/* Playing conservatively, see what the lowest value is that an opponent could cause this move to have */
 				int totalVisits = 0;
+				MachineState acquiredState = currentState;
 				for(List<Move> movesToMake : jointMoves){
-					MachineState acquiredState = stateMachine.getNextState(currentState,movesToMake);
+					acquiredState = stateMachine.getNextState(currentState,movesToMake);
 					GameNode acquiredNode = stateValues.get(acquiredState);
 					//System.out.println(acquiredNode);
 					if(acquiredNode!=null){
@@ -91,8 +92,12 @@ public class BryceMonteCarloTreeSearch_NoMiniMax extends Subplayer{
 				}
 				log.info("move: " + move + " value: " + moveMinValue + " visited: " + totalVisits);
 				if(moveMinValue > bestValue){
-					bestMove = move;
-					bestValue = moveMinValue;
+					
+					//check to make sure it is not a suicidal move
+					if (!isSuicidal(currentState, move, acquiredState)) {
+						bestMove = move;
+						bestValue = moveMinValue;
+					}
 				}
 			}
 
@@ -109,6 +114,39 @@ public class BryceMonteCarloTreeSearch_NoMiniMax extends Subplayer{
 			e.printStackTrace();
 		}
 	}
+
+	private boolean isSuicidal(MachineState currentState, Move move, MachineState acquiredState) {
+		try {
+			if (!stateMachine.isTerminal(acquiredState)) {
+				List<Move> legalMoves = stateMachine.getLegalMoves(acquiredState, role);
+				for (Move nextMove : legalMoves) {
+					List<List<Move>> jointMoves = stateMachine.getLegalJointMoves(acquiredState, role, nextMove);
+
+					for(List<Move> jointMove : jointMoves){
+						MachineState nextState = stateMachine.getNextState(acquiredState, jointMove);
+						
+						if ((stateMachine.isTerminal(nextState) && stateMachine.getGoal(nextState,role)==0)) {
+							System.out.println("Decided that move " + move + " was SUICIDAL");
+							return true;
+						}
+					}
+				}
+				
+			}
+		} catch (MoveDefinitionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (TransitionDefinitionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (GoalDefinitionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
+
 
 	/**
 	 * If unexpanded (nodes with more game states to follow, but no children in our tree) nodes exist below the startNode,
@@ -181,7 +219,7 @@ public class BryceMonteCarloTreeSearch_NoMiniMax extends Subplayer{
 				for(List<Move> jointMove : jointMoves){
 					Random r = new Random();
 					double result = r.nextDouble();
-					if(result<0.05) System.out.println("Starting State: " + startNode.state);
+					//if(result<0.05) System.out.println("Starting State: " + startNode.state);
 					MachineState nextState = stateMachine.getNextState(startNode.state, jointMove);
 					
 					if (!stateMachine.isTerminal(nextState) || (stateMachine.isTerminal(nextState) && stateMachine.getGoal(nextState,role)!=0)) {
@@ -247,7 +285,6 @@ public class BryceMonteCarloTreeSearch_NoMiniMax extends Subplayer{
 		}
 	}
 }
-
 
 
 

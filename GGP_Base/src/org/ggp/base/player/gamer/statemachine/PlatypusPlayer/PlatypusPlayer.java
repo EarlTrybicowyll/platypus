@@ -24,6 +24,7 @@ import platypus.logging.PlatypusLogger;
 import platypus.utils.StateSave;
 import players.BryceMonteCarloTreeSearch;
 import players.BryceMonteCarloTreeSearch_NoMiniMax;
+import players.BryceMonteCarloTreeSearch_NoMiniMax_MultiThreaded;
 import players.PlayerResult;
 import players.TerminalStateProximity;
 import players.WinCheckBoundedSearch;
@@ -35,6 +36,10 @@ public class PlatypusPlayer extends StateMachineGamer {
 	private List<Move> optimalSequence = null;
 	private PlayerResult playerResult = new PlayerResult();
 	private TerminalStateProximity terminalStateProximity;
+	
+	private long propNetCreationTime;
+	
+	private List<StateMachine> stateMachines = new ArrayList<StateMachine>();
 
 	// Optional second argument - level of logging. Default is ALL. Logs to
 	// logs/platypus
@@ -45,7 +50,13 @@ public class PlatypusPlayer extends StateMachineGamer {
 	public StateMachine getInitialStateMachine() {
 		// TODO Auto-generated method stub
 		//return getStateMachine
-		return new FirstPropNetStateMachine();
+		long startTime = System.currentTimeMillis();
+		StateMachine firstMachine = new FirstPropNetStateMachine();
+		long stopTime = System.currentTimeMillis();
+		propNetCreationTime = stopTime - startTime;
+		System.out.println("PropNetCreationTime: " + propNetCreationTime);
+		stateMachines.add(firstMachine);
+		return firstMachine;
 	}
 
 	@Override
@@ -53,9 +64,21 @@ public class PlatypusPlayer extends StateMachineGamer {
 			throws TransitionDefinitionException, MoveDefinitionException,
 			GoalDefinitionException {
 
-		terminalStateProximity = new TerminalStateProximity(timeout - 1000,
-				getStateMachine(), getCurrentState(), getRole(), log);
+		//terminalStateProximity = new TerminalStateProximity(timeout - 1000,
+		//		getStateMachine(), getCurrentState(), getRole(), log);
 
+		if(propNetCreationTime==0) propNetCreationTime = 1;
+		long estimatedThreadsToCreate = (timeout-System.currentTimeMillis())/propNetCreationTime;
+		System.out.println("Estimating I can create " + estimatedThreadsToCreate + " propNets in given time.");
+		//int MAX_NUM_THREADS = 4;
+		for(int i=1; i<Math.min(BryceMonteCarloTreeSearch_NoMiniMax_MultiThreaded.MAX_NUM_THREADS,estimatedThreadsToCreate); i++){
+			FirstPropNetStateMachine first = new FirstPropNetStateMachine();
+			first.initialize(((FirstPropNetStateMachine) stateMachines.get(0)).getDescription());
+			stateMachines.add(first);
+			System.out.println("added new prop machine: " + i);
+			if(System.currentTimeMillis()>timeout) break;
+		}
+				
 		// if(getStateMachine().getRoles().size()==1){
 		// /* Single-player game, so try to brute force as much as possible */
 		// optimalSequence =
@@ -185,9 +208,9 @@ public class PlatypusPlayer extends StateMachineGamer {
 		}
 		
 
-		Thread playerThread = new Thread(new BryceMonteCarloTreeSearch_NoMiniMax(
+		Thread playerThread = new Thread(new BryceMonteCarloTreeSearch_NoMiniMax_MultiThreaded(
 				getStateMachine(), getRole(), playerResult, getCurrentState(),
-				log));
+				log, stateMachines, timeout-3000));
 		log.info("Starting Monte Carlo");
 		playerThread.start();
 		try {
@@ -200,7 +223,7 @@ public class PlatypusPlayer extends StateMachineGamer {
 			// e.printStackTrace();
 		}
 		/* Tell the thread searching for the best move it is done so it can exit */
-		playerThread.interrupt();
+		//playerThread.interrupt();
 		try {
 			/* Sleep for 2 seconds less than the maximum time allowed */
 			Thread.sleep(1000);

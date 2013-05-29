@@ -31,124 +31,131 @@ import java.util.Collection;
 
 @SuppressWarnings("unused")
 public class FirstPropNetStateMachine extends StateMachine {
-    /** The underlying proposition network  */
-    private PropNet propNet;
-    /** The topological ordering of the propositions */
-    private List<Proposition> ordering;
-    /** The player roles */
-    private List<Role> roles;
-    
-    private List<PropNetInfo> propNets;
-    
-    private class PropNetInfo{
-    	PropNet prop;
-    	List<Proposition> ordering;
-    	public PropNetInfo(PropNet propN, List<Proposition> order){
-    		prop = propN;
-    		ordering = order;
-    	}
-    }
-    /**
-     * Initializes the PropNetStateMachine. You should compute the topological
-     * ordering here. Additionally you may compute the initial state here, at
-     * your discretion.
-     */
-    @Override
-    public synchronized void initialize(List<Gdl> description) {
-    	try{
-    		propNet = OptimizingPropNetFactory.create(description);
-    		propNet.renderToFile("LastGamePlayedPropNet.dot");
-    		roles = propNet.getRoles();
-    		ordering = getOrdering(propNet);
-    		for(Proposition p : ordering){
-    			System.out.println(p.getName());
-    		}
-    		//Set<Set<Component>> factors = factorPropNet();
-    		System.out.println("PropNetStateMachine: starting to factor...");
-    		propNets = factorPropNetDumb();
-    		System.out.println("Found "+propNets.size()+" factors.");
-    		
-    	}catch(InterruptedException ex){
-    		ex.printStackTrace();
-    	}
-    }    
-    
-    private boolean propMarkConjunction(Component p, boolean isRecur){
-    	for (Component c : p.getInputs()){
+	/** The underlying proposition network  */
+	private PropNet propNet;
+	/** The topological ordering of the propositions */
+	private List<Proposition> ordering;
+	/** The player roles */
+	private List<Role> roles;
+
+	private List<PropNetInfo> propNets;
+
+	private List<Gdl> description;
+
+	public List<Gdl> getDescription(){
+		return description;
+	}
+
+	private class PropNetInfo{
+		PropNet prop;
+		List<Proposition> ordering;
+		public PropNetInfo(PropNet propN, List<Proposition> order){
+			prop = propN;
+			ordering = order;
+		}
+	}
+	/**
+	 * Initializes the PropNetStateMachine. You should compute the topological
+	 * ordering here. Additionally you may compute the initial state here, at
+	 * your discretion.
+	 */
+	@Override
+	public synchronized void initialize(List<Gdl> description) {
+		try{
+			this.description = description;
+			propNet = OptimizingPropNetFactory.create(description);
+			propNet.renderToFile("LastGamePlayedPropNet" + System.currentTimeMillis() + "_" + this.hashCode() + ".dot");
+			roles = propNet.getRoles();
+			ordering = getOrdering(propNet);
+			for(Proposition p : ordering){
+				//System.out.println(p.getName());
+			}
+			//Set<Set<Component>> factors = factorPropNet();
+			System.out.println("PropNetStateMachine: starting to factor...");
+			propNets = factorPropNetDumb();
+			System.out.println("Found "+propNets.size()+" factors.");
+
+		}catch(InterruptedException ex){
+			ex.printStackTrace();
+		}
+	}    
+
+	private boolean propMarkConjunction(Component p, boolean isRecur){
+		for (Component c : p.getInputs()){
 			if(!propMarkP(c, isRecur)){
 				return false;
 			}
 		}
 		return true;
-    }
-    
-    private boolean propMarkDisjunction(Component p, boolean isRecur){
-    	for (Component c : p.getInputs()){
+	}
+
+	private boolean propMarkDisjunction(Component p, boolean isRecur){
+		for (Component c : p.getInputs()){
 			if(propMarkP(c, isRecur)){
 				return true;
 			}
 		}
 		return false;
-    }
-    
-    
-  
+	}
 
-    
-    private boolean propMarkPNonRecursive(Component p){
-    	return propMarkP(p, false);
-    }
-    
-    private boolean propMarkPRecursive(Component p){
-    	return propMarkP(p, true);
-    }
-    
-    private boolean propMarkP(Component p, boolean isRecur){
-    	//if(p == null) return false; //for bad legals in mini propnets
-    	
-    	if(p instanceof Proposition){ //should return false when reaching init?
-    		Proposition prop = (Proposition)p;
-    		if(isBase(prop) || isInput(prop) || prop == propNet.getInitProposition()){
-    			return prop.getValue();
-    		}else{
-    			if(!isRecur){
-    				return p.getValue();
-    			}else{
-    				if(p.getInputs().size() == 0){
-    					System.out.println("Returning false: "+((Proposition)p).getName());
-    					return false; // more legals!!!!
-    				}
-    				return propMarkP(p.getSingleInput(), isRecur);
-    			}
-    		}
-    	}else if (p instanceof Constant){
-    		return p.getValue();
-    	}else if (p instanceof And){
-    		return propMarkConjunction(p, isRecur);
-    	}else if (p instanceof Not){
-    		return !propMarkP(p.getSingleInput(), isRecur);
-    	}else if (p instanceof Or){
-    		return propMarkDisjunction(p, isRecur);
-    	}
-    	return false;
-    }
-   
-    private void clearPropNet(){
-    	for(Proposition p : propNet.getPropositions()){
-    		p.setValue(false);
-    	}
-    }
-    
-    private void markBases(MachineState state){
-    	Set<GdlSentence> sentences = state.getContents();
+
+
+
+
+	private boolean propMarkPNonRecursive(Component p){
+		return propMarkP(p, false);
+	}
+
+	private boolean propMarkPRecursive(Component p){
+		return propMarkP(p, true);
+	}
+
+	private boolean propMarkP(Component p, boolean isRecur){
+		//if(p == null) return false; //for bad legals in mini propnets
+
+		if(p instanceof Proposition){ //should return false when reaching init?
+			Proposition prop = (Proposition)p;
+			if(isBase(prop) || isInput(prop) || prop == propNet.getInitProposition()){
+				return prop.getValue();
+			}else{
+				if(!isRecur){
+					return p.getValue();
+				}else{
+					if(p.getInputs().size() == 0){
+						System.out.println("Returning false: "+((Proposition)p).getName());
+						return false; // more legals!!!!
+					}
+					return propMarkP(p.getSingleInput(), isRecur);
+				}
+			}
+		}else if (p instanceof Constant){
+			return p.getValue();
+		}else if (p instanceof And){
+			return propMarkConjunction(p, isRecur);
+		}else if (p instanceof Not){
+			return !propMarkP(p.getSingleInput(), isRecur);
+		}else if (p instanceof Or){
+			return propMarkDisjunction(p, isRecur);
+		}
+		return false;
+	}
+
+	private void clearPropNet(){
+		for(Proposition p : propNet.getPropositions()){
+			p.setValue(false);
+		}
+	}
+
+	private void markBases(MachineState state){
+		Set<GdlSentence> sentences = state.getContents();
 		Map<GdlSentence, Proposition> map = propNet.getBasePropositions();
-    	for(GdlSentence s : sentences){
-    		Proposition c = map.get(s);
-    		if(c!=null){
-    			c.setValue(true);
-    		}
-    	}
-    }
+		for(GdlSentence s : sentences){
+			Proposition c = map.get(s);
+			if(c!=null){
+				c.setValue(true);
+			}
+		}
+	}
 	/**
 	 * Computes if the state is terminal. Should return the value
 	 * of the terminal proposition for the state.
@@ -160,7 +167,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 		clearPropNet();
 		return result;
 	}
-	
+
 	/* Factors the prop net, but only at the first OR, rather than finding all of the factors */
 	private List<PropNetInfo> factorPropNetDumb(){
 		List<PropNet> propNets = new ArrayList<PropNet>();
@@ -170,7 +177,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 		Component bottomOr;
 		Component goalProposition = findWinningGoalNode();
 		bottomOr =  findBottomOr(goalProposition);
-		
+
 		if(bottomOr!=null){
 			/* For each branch leading out of the bottom OR, create a set of all components on which the OR depends,
 			 * i.e. find all components in that branch.
@@ -194,29 +201,29 @@ public class FirstPropNetStateMachine extends StateMachine {
 				allDistinctComponents.addAll(factor);
 				totalIndependentSetSize+=factor.size();
 			}
-			
+
 			if(allDistinctComponents.size()<totalIndependentSetSize){
 				System.out.println("Found factors, but they weren't independent.");
 				propNets.add(propNet);
 			} else {
-				
-			/* Add the bottom of the propnet (bottom OR and below) to each branch*/
+
+				/* Add the bottom of the propnet (bottom OR and below) to each branch*/
 				for(Component parent : bottomOr.getInputs()){
 					for(Set<Component> factor : factors){
 						if(factor.contains(parent)){
 							addBottomPropNet(factor,parent, goalProposition);
-							
-//							for(Proposition legal : propNet.getLegalPropositions().get(roles.get(0))){
-//								addLegalProposition(legal, factor);
-//								System.out.println("Adding " + legal + " as a proposition.");
-//							}
+
+							//							for(Proposition legal : propNet.getLegalPropositions().get(roles.get(0))){
+							//								addLegalProposition(legal, factor);
+							//								System.out.println("Adding " + legal + " as a proposition.");
+							//							}
 							//factor.addAll(propNet.getLegalPropositions().get(roles.get(0)));
 						}		
 					}
 				}
 				//System.out.println("added " + propNet.getLegalPropositions().get(roles.get(0)));
-				
-			/* Convert sets of components to propnets */
+
+				/* Convert sets of components to propnets */
 				int i = 0;
 				for(Set<Component> factor : factors){
 					System.out.println("adding new factor");
@@ -225,18 +232,18 @@ public class FirstPropNetStateMachine extends StateMachine {
 					newNet.renderToFile("LastPlayedGameFactor" + i + ".dot");
 					i++;
 				}
-				
-				
+
+
 				System.out.println("Successfully created " + propNets.size() + " factors.");			
 			}
 		}else{
-			
+
 			/* Only factor is the entire game, so add it */
 			Set<Component> simplifiedPropNet = new HashSet<Component>();
 			getTreeFromBottomComponent(findWinningGoalNode(), simplifiedPropNet);
-			
-		
-			
+
+
+
 			/* Add back in all the relevant legal moves */
 			Set<Component> relevantLegalProps = new HashSet<Component>();
 			for(Component comp : simplifiedPropNet){
@@ -247,12 +254,12 @@ public class FirstPropNetStateMachine extends StateMachine {
 					//relevantLegalProps.addAll(legalComponents); (should they be in ordering?)
 				}
 			}
-			
+
 			simplifiedPropNet.addAll(relevantLegalProps);
 			//simplifiedPropNet.add(propNet.getInitProposition());
-			
+
 			PropNet newPropNet = new PropNet(getRoles(),simplifiedPropNet);
-			
+
 			propNets.add(newPropNet);
 			System.out.println("Original PropNet: " + propNet.getSize());
 			System.out.println("simplified PropNet : " + newPropNet.getSize());
@@ -273,11 +280,11 @@ public class FirstPropNetStateMachine extends StateMachine {
 		propNet = old;
 		basePropositions = null;
 		inputPropositions = null;
-		
+
 		return list;
 	}
-	
-	
+
+
 
 	/**
 	 * Explores tree until it finds AND or OR component, returning the component if an Or is found, null otherwise
@@ -296,7 +303,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 			currentComp = currentComp.getSingleInput();
 		}
 	}
-	
+
 	/**
 	 * Adds all components on which the given starting component is dependent to a set of components
 	 * @param currentComponent
@@ -305,13 +312,21 @@ public class FirstPropNetStateMachine extends StateMachine {
 	private void getTreeFromBottomComponent(Component currentComponent, Set<Component> components){
 		if(components.contains(currentComponent)) return;
 		components.add(currentComponent);
-		
+
 		if(currentComponent==propNet.getInitProposition()) return;
-		
-		for(Component child : currentComponent.getOutputs()){
-			getTreeFromBottomComponent(child,components);
-		}
-		
+
+		/* Don't propagate upward if a child is terminal */
+//		boolean foundTerminalChild = false;
+//		for(Component child : currentComponent.getOutputs()){
+//			if(child==propNet.getTerminalProposition()) foundTerminalChild = true;
+//		}
+//
+//		if(!foundTerminalChild){
+			for(Component child : currentComponent.getOutputs()){
+				getTreeFromBottomComponent(child,components);
+			}
+		//}
+
 		if(isInput(currentComponent)){
 			return;
 		}
@@ -319,9 +334,9 @@ public class FirstPropNetStateMachine extends StateMachine {
 		for(Component parent : currentComponent.getInputs()){
 			getTreeFromBottomComponent(parent, components);
 		}
-		
-		
-		
+
+
+
 	}
 	/**
 	 * In the given component, replace the final Or with a new dummy transition that maintains all the outputs of the old or
@@ -334,23 +349,23 @@ public class FirstPropNetStateMachine extends StateMachine {
 		dummyTransition.addOutput(goal);
 		Component newTerminalProposition = new Proposition(propNet.getTerminalProposition().getName());
 		dummyTransition.addOutput(newTerminalProposition);
-		
+
 		startComponent.addOutput(dummyTransition);
-		
-		
+
+
 		factor.add(dummyTransition);
 		factor.add(newTerminalProposition);
 		factor.add(goal);
-		
-//		Component currentComponent = startComponent;
-//		
-//		while(true){
-//			factor.add(currentComponent);
-//			if(currentComponent==propNet.getTerminalProposition()) return;
-//			currentComponent = currentComponent.getSingleOutput();
-//		}
+
+		//		Component currentComponent = startComponent;
+		//		
+		//		while(true){
+		//			factor.add(currentComponent);
+		//			if(currentComponent==propNet.getTerminalProposition()) return;
+		//			currentComponent = currentComponent.getSingleOutput();
+		//		}
 	}
-	
+
 	/* Currently assumes single player */
 	private Proposition findWinningGoalNode(){
 		Set<Proposition> goalNodes = propNet.getGoalPropositions().get(getRoles().get(0));
@@ -361,8 +376,8 @@ public class FirstPropNetStateMachine extends StateMachine {
 		}
 		return null;
 	}
-	
-	
+
+
 	/* Add legal proposition and logical connectors to the given factor.  Stops when it gets to a proposition */
 	private void addLegalProposition(Component legal, Set<Component> factor){
 		factor.add(legal);
@@ -379,8 +394,8 @@ public class FirstPropNetStateMachine extends StateMachine {
 			addLegalPropsRecursive(parent,factor);
 		}
 	}
-	
-	
+
+
 	public void setPropNet(int index){
 		propNet = propNets.get(index).prop;
 		ordering = propNets.get(index).ordering;
@@ -388,93 +403,93 @@ public class FirstPropNetStateMachine extends StateMachine {
 		basePropositions = null;
 		inputPropositions = null;
 	}
-	
+
 	public int getNumPropNets(){
 		return propNets.size();
 	}
-	
-	
-	
+
+
+
 	private Set<Set<Component>> factorPropNet(){
-        Map<Component,Set<Component>> propFactors = new HashMap<Component,Set<Component>>();
-        
-        Set<Component> initialFactor = new HashSet<Component>();
-        
-        /* Recursively construct factor trees, copying factors at every or transition and joining factors at every and transition 
-         * Initialize the starting component to be the terminal node in the net and put it in the initial factor
-         */
-        Component terminalProp = propNet.getTerminalProposition();
-        initialFactor.add(terminalProp);
-        propFactors.put(terminalProp,initialFactor);
-        
-        recursiveFactorPropNet(propFactors,terminalProp);
-        
-        /* Iterate over base propositions to find distinct complete trees to create set of factors */
-        Set<Set<Component>> factors = new HashSet<Set<Component>>(propFactors.values());
-        /*Just get the base components factors */
-        Set<Set<Component>> baseFactors = new HashSet<Set<Component>>();
-        for(Component comp : getBasePropositions()){
-        	baseFactors.add(propFactors.get(comp));
-        }
-        System.out.println("Found " + baseFactors.size() + " base factors.");
-        System.out.println("Found " + factors.size() + " factors.");
-        return baseFactors;
-    }
-    
-    private void recursiveFactorPropNet(Map<Component,Set<Component>> propFactors, Component currentComponent){
-    	if(isBase(currentComponent) || isInput(currentComponent) || currentComponent == propNet.getInitProposition()){
-            /* Done with the current factor */
-            return;
-        }
-        
-        if(currentComponent instanceof Or){
-            /* Create a copy of the factor for each parent, then recurse on those factors */
-            for(Component comp : currentComponent.getInputs()){
-                Set<Component> newFactor = new HashSet<Component>(propFactors.get(currentComponent));
-                newFactor.add(comp);
-                propFactors.put(comp,newFactor);
-                recursiveFactorPropNet(propFactors, comp);
-            }
-            return;
-        }
-        
-        if(currentComponent instanceof And){
-            /* Merge each of the factors from the parents of the currentComponent, if they exist
-             * Add the currentComponent to the factor as well
-             */
+		Map<Component,Set<Component>> propFactors = new HashMap<Component,Set<Component>>();
 
-            Set<Component> mergedSet = propFactors.get(currentComponent);
-            
-            for(Component comp : currentComponent.getInputs()){
-                if(propFactors.containsKey(comp)){
-                    Set<Component> parentFactor = propFactors.get(comp);
-                    mergedSet.addAll(parentFactor);
-                }
-                mergedSet.add(comp);
-                /* Associate each parent with the new merged set */
-                propFactors.put(comp,mergedSet);
+		Set<Component> initialFactor = new HashSet<Component>();
 
-            }
-            
-            for(Component comp : currentComponent.getInputs()){
-                /* Recurse on all inputs */
-                recursiveFactorPropNet(propFactors,comp);
-            }          
-            return;
-        }
-        
-        /* Default case, where there is only a single parent.  Simply pass the currentFactor up and add 
-         * the current node to that factor.
-         */
-        Set<Component> currentFactor = propFactors.get(currentComponent);
-        Component parent = currentComponent.getSingleInput();
-        currentFactor.add(parent);
-        propFactors.put(parent, currentFactor);
-        
-        recursiveFactorPropNet(propFactors,parent);
-    }
-	
-   
+		/* Recursively construct factor trees, copying factors at every or transition and joining factors at every and transition 
+		 * Initialize the starting component to be the terminal node in the net and put it in the initial factor
+		 */
+		Component terminalProp = propNet.getTerminalProposition();
+		initialFactor.add(terminalProp);
+		propFactors.put(terminalProp,initialFactor);
+
+		recursiveFactorPropNet(propFactors,terminalProp);
+
+		/* Iterate over base propositions to find distinct complete trees to create set of factors */
+		Set<Set<Component>> factors = new HashSet<Set<Component>>(propFactors.values());
+		/*Just get the base components factors */
+		Set<Set<Component>> baseFactors = new HashSet<Set<Component>>();
+		for(Component comp : getBasePropositions()){
+			baseFactors.add(propFactors.get(comp));
+		}
+		System.out.println("Found " + baseFactors.size() + " base factors.");
+		System.out.println("Found " + factors.size() + " factors.");
+		return baseFactors;
+	}
+
+	private void recursiveFactorPropNet(Map<Component,Set<Component>> propFactors, Component currentComponent){
+		if(isBase(currentComponent) || isInput(currentComponent) || currentComponent == propNet.getInitProposition()){
+			/* Done with the current factor */
+			return;
+		}
+
+		if(currentComponent instanceof Or){
+			/* Create a copy of the factor for each parent, then recurse on those factors */
+			for(Component comp : currentComponent.getInputs()){
+				Set<Component> newFactor = new HashSet<Component>(propFactors.get(currentComponent));
+				newFactor.add(comp);
+				propFactors.put(comp,newFactor);
+				recursiveFactorPropNet(propFactors, comp);
+			}
+			return;
+		}
+
+		if(currentComponent instanceof And){
+			/* Merge each of the factors from the parents of the currentComponent, if they exist
+			 * Add the currentComponent to the factor as well
+			 */
+
+			Set<Component> mergedSet = propFactors.get(currentComponent);
+
+			for(Component comp : currentComponent.getInputs()){
+				if(propFactors.containsKey(comp)){
+					Set<Component> parentFactor = propFactors.get(comp);
+					mergedSet.addAll(parentFactor);
+				}
+				mergedSet.add(comp);
+				/* Associate each parent with the new merged set */
+				propFactors.put(comp,mergedSet);
+
+			}
+
+			for(Component comp : currentComponent.getInputs()){
+				/* Recurse on all inputs */
+				recursiveFactorPropNet(propFactors,comp);
+			}          
+			return;
+		}
+
+		/* Default case, where there is only a single parent.  Simply pass the currentFactor up and add 
+		 * the current node to that factor.
+		 */
+		Set<Component> currentFactor = propFactors.get(currentComponent);
+		Component parent = currentComponent.getSingleInput();
+		currentFactor.add(parent);
+		propFactors.put(parent, currentFactor);
+
+		recursiveFactorPropNet(propFactors,parent);
+	}
+
+
 	/**
 	 * Computes the goal for a role in the current state.
 	 * Should return the value of the goal proposition that
@@ -484,7 +499,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 	 */
 	@Override
 	public synchronized int getGoal(MachineState state, Role role)
-	throws GoalDefinitionException {
+			throws GoalDefinitionException {
 		markBases(state);
 		Set<Proposition> goalProps = propNet.getGoalPropositions().get(role);
 		boolean found = false;
@@ -508,7 +523,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 		clearPropNet();
 		return val;
 	}
-	
+
 	/**
 	 * Returns the initial state. The initial state can be computed
 	 * by only setting the truth value of the INIT proposition to true,
@@ -524,14 +539,14 @@ public class FirstPropNetStateMachine extends StateMachine {
 		clearPropNet();
 		return state;
 	}
-	
+
 	/**
 	 * Computes the legal moves for role in state.
 	 */
 	@Override
 	public synchronized List<Move> getLegalMoves(MachineState state, Role role)
-	throws MoveDefinitionException {
-		
+			throws MoveDefinitionException {
+
 		//.out.println("Getting Legals for "+state.toString()+" and Role: "+role.toString());
 		List<Move> listMoves = new LinkedList<Move>();
 		markBases(state);
@@ -548,26 +563,26 @@ public class FirstPropNetStateMachine extends StateMachine {
 		clearPropNet();
 		return listMoves;
 	}
-	
-	
+
+
 	/**
 	 * Computes the next state given state and the list of moves.
 	 */
 	@Override
 	public synchronized MachineState getNextState(MachineState state, List<Move> moves)
-	throws TransitionDefinitionException {
+			throws TransitionDefinitionException {
 		//(moves.toString() + " "+state.toString());
 		if(moves == null) {
 			System.out.println("Moves is null :(");
 			System.out.println(state);
 			return state; //not sure exactly what this should be
 		}
-		
+
 		List<GdlSentence> sentences = toDoes(moves);
-		
+
 		markActions(sentences);
 		markBases(state);
-		
+
 		//HashMap<Proposition, Boolean> next = new HashMap<Proposition, Boolean>();
 		for(Proposition p: ordering){
 			p.setValue(propMarkPNonRecursive(p.getSingleInput()));
@@ -583,7 +598,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 		String stateString = nextState.getContents().toString();
 		return nextState;
 	}
-	
+
 	private void markActions(List<GdlSentence> sentences){
 		Map<GdlSentence, Proposition> inputs = propNet.getInputPropositions();
 		for(GdlSentence sentence: sentences){
@@ -591,18 +606,18 @@ public class FirstPropNetStateMachine extends StateMachine {
 			if(c!=null) c.setValue(true);
 		}
 	}
-	
+
 	Set<Component> basePropositions = null;
-	
+
 	private boolean isBase(Component base){
-		
+
 		if(basePropositions!=null){
 			return basePropositions.contains(base);
 		}
 		basePropositions = new HashSet<Component>(propNet.getBasePropositions().values());
 		return basePropositions.contains(base);
 	}
-	
+
 	private Set<Component> getBasePropositions(){
 		if(basePropositions!=null){
 			return basePropositions;
@@ -610,11 +625,11 @@ public class FirstPropNetStateMachine extends StateMachine {
 		basePropositions = new HashSet<Component>(propNet.getBasePropositions().values());
 		return basePropositions;
 	}
-	
+
 	Set<Component> inputPropositions = null;
-	
+
 	private boolean isInput(Component base){
-		
+
 		if(inputPropositions!=null){
 			return inputPropositions.contains(base);
 		}
@@ -624,19 +639,19 @@ public class FirstPropNetStateMachine extends StateMachine {
 		}
 		return inputPropositions.contains(base);
 	}
-	
+
 	private List<Component> getLeaves(PropNet prop){
 		List<Component> leaves = new LinkedList<Component>();
 		leaves.addAll(prop.getBasePropositions().values());
 		for(Component c: prop.getComponents()){
-			
+
 			if(c.getInputs().size() == 0){
 				leaves.add(c);
 			}
 		}
 		return leaves;
 	}
-	
+
 	private boolean seenLink(List<Link>seenLinks, Component src, Component dst){
 		for(Link link : seenLinks){
 			if(link.dest == dst && link.source == src){
@@ -655,16 +670,16 @@ public class FirstPropNetStateMachine extends StateMachine {
 		}
 		return true;
 	}
-	
+
 	private class Link{
 		Component source;
 		Component dest;
-		
+
 		public Link(Component source, Component dest){
 			this.source = source;
 			this.dest = dest;
 		}
-		
+
 	}
 	/**
 	 * This should compute the topological ordering of propositions.
@@ -680,24 +695,24 @@ public class FirstPropNetStateMachine extends StateMachine {
 	 * 
 	 * @return The order in which the truth values of propositions need to be set.
 	 */
-	
+
 	public synchronized List<Proposition> getOrdering(PropNet prop)
 	{
-	    // List to contain the topological ordering.
-	    List<Proposition> order = new LinkedList<Proposition>();
-	    				
+		// List to contain the topological ordering.
+		List<Proposition> order = new LinkedList<Proposition>();
+
 		// All of the components in the PropNet
 		List<Component> components = new ArrayList<Component>(prop.getComponents());
-		
+
 		// All of the propositions in the PropNet.		
 		List<Component> noIncoming = getLeaves(prop);
 		List<Link> seenLinks = new LinkedList<Link>();
-		
+
 		while(noIncoming.size() > 0){
 			Component node = noIncoming.remove(0);
-			
+
 			if(node instanceof Proposition && !isBase(node) && !isInput(node) && node != prop.getInitProposition()){
-					order.add((Proposition)node);
+				order.add((Proposition)node);
 			}
 			Set<Component> outputs = node.getOutputs();
 			for(Component comp : outputs){
@@ -707,17 +722,17 @@ public class FirstPropNetStateMachine extends StateMachine {
 				//mark the link
 				Link link = new Link(node, comp);
 				seenLinks.add(link);
-				
+
 				if(allInputsSeen(comp, seenLinks)){
 					noIncoming.add(comp);
 				}
 			}
-			
+
 		}
 		return order;
-		
+
 	}
-	
+
 	/* Already implemented for you */
 	@Override
 	public synchronized List<Role> getRoles() {
@@ -725,7 +740,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 	}
 
 	/* Helper methods */
-		
+
 	/**
 	 * The Input propositions are indexed by (does ?player ?action).
 	 * 
@@ -741,7 +756,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 	{
 		List<GdlSentence> doeses = new ArrayList<GdlSentence>(moves.size());
 		Map<Role, Integer> roleIndices = getRoleIndices();
-		
+
 		for (int i = 0; i < roles.size(); i++)
 		{
 			int index = roleIndices.get(roles.get(i));
@@ -749,7 +764,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 		}
 		return doeses;
 	}
-	
+
 	/**
 	 * Takes in a Legal Proposition and returns the appropriate corresponding Move
 	 * @param p
@@ -759,19 +774,19 @@ public class FirstPropNetStateMachine extends StateMachine {
 	{
 		return new Move(p.getName().get(1));
 	}
-	
+
 	/**
 	 * Helper method for parsing the value of a goal proposition
 	 * @param goalProposition
 	 * @return the integer value of the goal proposition
 	 */	
-    private int getGoalValue(Proposition goalProposition)
+	private int getGoalValue(Proposition goalProposition)
 	{
 		GdlRelation relation = (GdlRelation) goalProposition.getName();
 		GdlConstant constant = (GdlConstant) relation.get(1);
 		return Integer.parseInt(constant.toString());
 	}
-	
+
 	/**
 	 * A Naive implementation that computes a PropNetMachineState
 	 * from the true BasePropositions.  This is correct but slower than more advanced implementations
@@ -780,7 +795,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 	 */	
 	public synchronized MachineState getStateFromBase()
 	{
-		
+
 		Set<GdlSentence> contents = new HashSet<GdlSentence>();
 		for (Proposition p : propNet.getBasePropositions().values())
 		{
