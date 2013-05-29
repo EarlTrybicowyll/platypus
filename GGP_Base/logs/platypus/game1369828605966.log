@@ -12,3 +12,4 @@
   <thread>10</thread>
   <message>Added FileHandler to Logger</message>
 </record>
+</log>

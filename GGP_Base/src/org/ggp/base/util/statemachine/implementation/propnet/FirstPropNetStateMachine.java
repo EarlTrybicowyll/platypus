@@ -64,7 +64,7 @@ public class FirstPropNetStateMachine extends StateMachine {
 		try{
 			this.description = description;
 			propNet = OptimizingPropNetFactory.create(description);
-			propNet.renderToFile("LastGamePlayedPropNet" + System.currentTimeMillis() + "_" + this.hashCode() + ".dot");
+			//propNet.renderToFile("LastGamePlayedPropNet" + System.currentTimeMillis() + "_" + this.hashCode() + ".dot");
 			roles = propNet.getRoles();
 			ordering = getOrdering(propNet);
 			for(Proposition p : ordering){
