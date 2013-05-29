@@ -1,0 +1,4635 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2013-05-27T21:35:50</date>
+  <millis>1369715750091</millis>
+  <sequence>0</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>platypus.logging.PlatypusLogger</class>
+  <method>getLogger</method>
+  <thread>10</thread>
+  <message>Added FileHandler to Logger</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:16</date>
+  <millis>1369715776803</millis>
+  <sequence>1</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:16</date>
+  <millis>1369715776803</millis>
+  <sequence>2</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 8 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:16</date>
+  <millis>1369715776803</millis>
+  <sequence>3</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:16</date>
+  <millis>1369715776803</millis>
+  <sequence>4</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:16</date>
+  <millis>1369715776804</millis>
+  <sequence>5</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9470</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786276</millis>
+  <sequence>6</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 8 ) value: 157.0 visited: 157</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786276</millis>
+  <sequence>7</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 4 ) value: 407.0 visited: 407</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786276</millis>
+  <sequence>8</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 5 ) value: 510.0 visited: 510</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786277</millis>
+  <sequence>9</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 1 ) value: 213.0 visited: 213</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786277</millis>
+  <sequence>10</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 6 ) value: 231.0 visited: 231</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786277</millis>
+  <sequence>11</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 7 ) value: 111.0 visited: 111</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786278</millis>
+  <sequence>12</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 2 ) value: 179.0 visited: 179</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:26</date>
+  <millis>1369715786278</millis>
+  <sequence>13</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>12</thread>
+  <message>move: ( drop 3 ) value: 201.0 visited: 201</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:27</date>
+  <millis>1369715787274</millis>
+  <sequence>14</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:27</date>
+  <millis>1369715787275</millis>
+  <sequence>15</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:42</date>
+  <millis>1369715802999</millis>
+  <sequence>16</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:43</date>
+  <millis>1369715803000</millis>
+  <sequence>17</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 8 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:43</date>
+  <millis>1369715803000</millis>
+  <sequence>18</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:43</date>
+  <millis>1369715803000</millis>
+  <sequence>19</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:43</date>
+  <millis>1369715803000</millis>
+  <sequence>20</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812503</millis>
+  <sequence>21</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 8 ) value: 249.0 visited: 249</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812504</millis>
+  <sequence>22</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 4 ) value: 271.0 visited: 271</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812504</millis>
+  <sequence>23</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 5 ) value: 116.0 visited: 116</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812504</millis>
+  <sequence>24</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 1 ) value: 167.0 visited: 167</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812505</millis>
+  <sequence>25</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 6 ) value: 223.0 visited: 223</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812505</millis>
+  <sequence>26</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 7 ) value: 188.0 visited: 188</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812505</millis>
+  <sequence>27</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 2 ) value: 203.0 visited: 203</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:52</date>
+  <millis>1369715812506</millis>
+  <sequence>28</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>13</thread>
+  <message>move: ( drop 3 ) value: 161.0 visited: 161</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:53</date>
+  <millis>1369715813496</millis>
+  <sequence>29</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:36:53</date>
+  <millis>1369715813496</millis>
+  <sequence>30</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:09</date>
+  <millis>1369715829327</millis>
+  <sequence>31</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:09</date>
+  <millis>1369715829327</millis>
+  <sequence>32</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 8 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:09</date>
+  <millis>1369715829327</millis>
+  <sequence>33</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:09</date>
+  <millis>1369715829327</millis>
+  <sequence>34</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:09</date>
+  <millis>1369715829328</millis>
+  <sequence>35</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9491</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838822</millis>
+  <sequence>36</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 8 ) value: 295.0 visited: 295</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838823</millis>
+  <sequence>37</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 4 ) value: 175.0 visited: 175</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838823</millis>
+  <sequence>38</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 5 ) value: 480.0 visited: 480</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838823</millis>
+  <sequence>39</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 1 ) value: 133.0 visited: 133</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838824</millis>
+  <sequence>40</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 6 ) value: 150.0 visited: 150</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838824</millis>
+  <sequence>41</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 7 ) value: 103.0 visited: 103</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838824</millis>
+  <sequence>42</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 2 ) value: 512.0 visited: 512</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:18</date>
+  <millis>1369715838825</millis>
+  <sequence>43</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>14</thread>
+  <message>move: ( drop 3 ) value: 215.0 visited: 215</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:19</date>
+  <millis>1369715839819</millis>
+  <sequence>44</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:19</date>
+  <millis>1369715839820</millis>
+  <sequence>45</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:35</date>
+  <millis>1369715855748</millis>
+  <sequence>46</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:35</date>
+  <millis>1369715855748</millis>
+  <sequence>47</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 8 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:35</date>
+  <millis>1369715855748</millis>
+  <sequence>48</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:35</date>
+  <millis>1369715855749</millis>
+  <sequence>49</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:35</date>
+  <millis>1369715855749</millis>
+  <sequence>50</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865245</millis>
+  <sequence>51</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 8 ) value: 207.0 visited: 207</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865246</millis>
+  <sequence>52</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 4 ) value: 214.0 visited: 214</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865246</millis>
+  <sequence>53</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 5 ) value: 316.0 visited: 316</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865246</millis>
+  <sequence>54</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 1 ) value: 299.0 visited: 299</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865247</millis>
+  <sequence>55</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 6 ) value: 267.0 visited: 267</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865247</millis>
+  <sequence>56</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 7 ) value: 431.0 visited: 431</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865247</millis>
+  <sequence>57</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 2 ) value: 304.0 visited: 304</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:45</date>
+  <millis>1369715865248</millis>
+  <sequence>58</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>15</thread>
+  <message>move: ( drop 3 ) value: 190.0 visited: 190</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:46</date>
+  <millis>1369715866244</millis>
+  <sequence>59</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:37:46</date>
+  <millis>1369715866245</millis>
+  <sequence>60</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 7 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:02</date>
+  <millis>1369715882067</millis>
+  <sequence>61</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:02</date>
+  <millis>1369715882067</millis>
+  <sequence>62</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 8 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:02</date>
+  <millis>1369715882068</millis>
+  <sequence>63</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:02</date>
+  <millis>1369715882068</millis>
+  <sequence>64</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:02</date>
+  <millis>1369715882068</millis>
+  <sequence>65</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891566</millis>
+  <sequence>66</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 8 ) value: 394.0 visited: 394</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891566</millis>
+  <sequence>67</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 4 ) value: 235.0 visited: 235</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891566</millis>
+  <sequence>68</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 5 ) value: 342.0 visited: 342</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891567</millis>
+  <sequence>69</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 1 ) value: 325.0 visited: 325</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891567</millis>
+  <sequence>70</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 6 ) value: 159.0 visited: 159</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891567</millis>
+  <sequence>71</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 7 ) value: 150.0 visited: 150</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891568</millis>
+  <sequence>72</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 2 ) value: 442.0 visited: 442</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:11</date>
+  <millis>1369715891568</millis>
+  <sequence>73</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>16</thread>
+  <message>move: ( drop 3 ) value: 108.0 visited: 108</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:12</date>
+  <millis>1369715892562</millis>
+  <sequence>74</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:12</date>
+  <millis>1369715892563</millis>
+  <sequence>75</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:28</date>
+  <millis>1369715908583</millis>
+  <sequence>76</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:28</date>
+  <millis>1369715908583</millis>
+  <sequence>77</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 8 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:28</date>
+  <millis>1369715908584</millis>
+  <sequence>78</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:28</date>
+  <millis>1369715908584</millis>
+  <sequence>79</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:28</date>
+  <millis>1369715908584</millis>
+  <sequence>80</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918080</millis>
+  <sequence>81</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 8 ) value: 92.0 visited: 92</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918081</millis>
+  <sequence>82</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 4 ) value: 170.0 visited: 170</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918081</millis>
+  <sequence>83</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 5 ) value: 208.0 visited: 208</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918081</millis>
+  <sequence>84</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 1 ) value: 169.0 visited: 169</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918082</millis>
+  <sequence>85</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 6 ) value: 126.0 visited: 126</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918082</millis>
+  <sequence>86</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 7 ) value: 91.0 visited: 91</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918082</millis>
+  <sequence>87</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 2 ) value: 3015.0 visited: 3015</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:38</date>
+  <millis>1369715918083</millis>
+  <sequence>88</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>17</thread>
+  <message>move: ( drop 3 ) value: 106.0 visited: 106</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:39</date>
+  <millis>1369715919080</millis>
+  <sequence>89</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:39</date>
+  <millis>1369715919080</millis>
+  <sequence>90</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:54</date>
+  <millis>1369715934809</millis>
+  <sequence>91</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:54</date>
+  <millis>1369715934810</millis>
+  <sequence>92</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:54</date>
+  <millis>1369715934810</millis>
+  <sequence>93</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:54</date>
+  <millis>1369715934810</millis>
+  <sequence>94</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:38:54</date>
+  <millis>1369715934810</millis>
+  <sequence>95</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944306</millis>
+  <sequence>96</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 8 ) value: 96.0 visited: 96</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944306</millis>
+  <sequence>97</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 4 ) value: 140.0 visited: 140</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944307</millis>
+  <sequence>98</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 5 ) value: 128.0 visited: 128</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944307</millis>
+  <sequence>99</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 1 ) value: 322.0 visited: 322</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944307</millis>
+  <sequence>100</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 6 ) value: 73.0 visited: 73</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944308</millis>
+  <sequence>101</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 7 ) value: 136.0 visited: 136</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944308</millis>
+  <sequence>102</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 2 ) value: 94442.0 visited: 94442</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:04</date>
+  <millis>1369715944308</millis>
+  <sequence>103</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>move: ( drop 3 ) value: 117.0 visited: 117</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:05</date>
+  <millis>1369715945305</millis>
+  <sequence>104</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:39:05</date>
+  <millis>1369715945306</millis>
+  <sequence>105</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:46:56</date>
+  <millis>1369716416921</millis>
+  <sequence>106</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:46:56</date>
+  <millis>1369716416922</millis>
+  <sequence>107</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:46:56</date>
+  <millis>1369716416922</millis>
+  <sequence>108</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:46:56</date>
+  <millis>1369716416922</millis>
+  <sequence>109</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:46:56</date>
+  <millis>1369716416922</millis>
+  <sequence>110</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9497</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426420</millis>
+  <sequence>111</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 5 ) value: 268.0 visited: 268</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426421</millis>
+  <sequence>112</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 4 ) value: 389.0 visited: 389</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426421</millis>
+  <sequence>113</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 2 ) value: 249.0 visited: 249</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426421</millis>
+  <sequence>114</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 1 ) value: 153.0 visited: 153</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426421</millis>
+  <sequence>115</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 8 ) value: 190.0 visited: 190</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426422</millis>
+  <sequence>116</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 3 ) value: 216.0 visited: 216</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426422</millis>
+  <sequence>117</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 7 ) value: 264.0 visited: 264</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:06</date>
+  <millis>1369716426422</millis>
+  <sequence>118</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>19</thread>
+  <message>move: ( drop 6 ) value: 378.0 visited: 378</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:07</date>
+  <millis>1369716427420</millis>
+  <sequence>119</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:07</date>
+  <millis>1369716427420</millis>
+  <sequence>120</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:23</date>
+  <millis>1369716443350</millis>
+  <sequence>121</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:23</date>
+  <millis>1369716443351</millis>
+  <sequence>122</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:23</date>
+  <millis>1369716443351</millis>
+  <sequence>123</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:23</date>
+  <millis>1369716443351</millis>
+  <sequence>124</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:23</date>
+  <millis>1369716443352</millis>
+  <sequence>125</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9496</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452849</millis>
+  <sequence>126</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 5 ) value: 527.0 visited: 527</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452849</millis>
+  <sequence>127</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 4 ) value: 228.0 visited: 228</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452850</millis>
+  <sequence>128</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 2 ) value: 221.0 visited: 221</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452850</millis>
+  <sequence>129</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 1 ) value: 484.0 visited: 484</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452850</millis>
+  <sequence>130</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 8 ) value: 230.0 visited: 230</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452851</millis>
+  <sequence>131</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 3 ) value: 234.0 visited: 234</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452851</millis>
+  <sequence>132</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 7 ) value: 212.0 visited: 212</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:32</date>
+  <millis>1369716452851</millis>
+  <sequence>133</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>20</thread>
+  <message>move: ( drop 6 ) value: 259.0 visited: 259</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:33</date>
+  <millis>1369716453848</millis>
+  <sequence>134</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:33</date>
+  <millis>1369716453849</millis>
+  <sequence>135</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:49</date>
+  <millis>1369716469675</millis>
+  <sequence>136</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:49</date>
+  <millis>1369716469676</millis>
+  <sequence>137</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:49</date>
+  <millis>1369716469676</millis>
+  <sequence>138</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:49</date>
+  <millis>1369716469676</millis>
+  <sequence>139</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:49</date>
+  <millis>1369716469676</millis>
+  <sequence>140</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479173</millis>
+  <sequence>141</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 5 ) value: 266.0 visited: 266</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479173</millis>
+  <sequence>142</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 4 ) value: 525.0 visited: 525</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479174</millis>
+  <sequence>143</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 2 ) value: 275.0 visited: 275</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479174</millis>
+  <sequence>144</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 1 ) value: 336.0 visited: 336</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479174</millis>
+  <sequence>145</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 8 ) value: 182.0 visited: 182</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479175</millis>
+  <sequence>146</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 3 ) value: 210.0 visited: 210</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479175</millis>
+  <sequence>147</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 7 ) value: 374.0 visited: 374</message>
+</record>
+<record>
+  <date>2013-05-27T21:47:59</date>
+  <millis>1369716479175</millis>
+  <sequence>148</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>21</thread>
+  <message>move: ( drop 6 ) value: 234.0 visited: 234</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:00</date>
+  <millis>1369716480172</millis>
+  <sequence>149</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:00</date>
+  <millis>1369716480172</millis>
+  <sequence>150</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:16</date>
+  <millis>1369716496107</millis>
+  <sequence>151</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:16</date>
+  <millis>1369716496107</millis>
+  <sequence>152</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:16</date>
+  <millis>1369716496107</millis>
+  <sequence>153</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:16</date>
+  <millis>1369716496107</millis>
+  <sequence>154</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:16</date>
+  <millis>1369716496108</millis>
+  <sequence>155</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9490</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505601</millis>
+  <sequence>156</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 5 ) value: 239.0 visited: 239</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505602</millis>
+  <sequence>157</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 4 ) value: 455.0 visited: 455</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505603</millis>
+  <sequence>158</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 2 ) value: 396.0 visited: 396</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505603</millis>
+  <sequence>159</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 1 ) value: 240.0 visited: 240</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505604</millis>
+  <sequence>160</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 8 ) value: 410.0 visited: 410</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505604</millis>
+  <sequence>161</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 3 ) value: 89.0 visited: 89</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505605</millis>
+  <sequence>162</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 7 ) value: 271.0 visited: 271</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:25</date>
+  <millis>1369716505606</millis>
+  <sequence>163</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>22</thread>
+  <message>move: ( drop 6 ) value: 274.0 visited: 274</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:26</date>
+  <millis>1369716506600</millis>
+  <sequence>164</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:26</date>
+  <millis>1369716506600</millis>
+  <sequence>165</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:42</date>
+  <millis>1369716522309</millis>
+  <sequence>166</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:42</date>
+  <millis>1369716522309</millis>
+  <sequence>167</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:42</date>
+  <millis>1369716522309</millis>
+  <sequence>168</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:42</date>
+  <millis>1369716522310</millis>
+  <sequence>169</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:42</date>
+  <millis>1369716522310</millis>
+  <sequence>170</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531805</millis>
+  <sequence>171</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 5 ) value: 95.0 visited: 95</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531806</millis>
+  <sequence>172</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 4 ) value: 39394.0 visited: 39394</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531806</millis>
+  <sequence>173</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 2 ) value: 100.0 visited: 100</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531807</millis>
+  <sequence>174</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 1 ) value: 78.0 visited: 78</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531807</millis>
+  <sequence>175</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 8 ) value: 92.0 visited: 92</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531807</millis>
+  <sequence>176</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 3 ) value: 77.0 visited: 77</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531807</millis>
+  <sequence>177</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 7 ) value: 116.0 visited: 116</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:51</date>
+  <millis>1369716531808</millis>
+  <sequence>178</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>23</thread>
+  <message>move: ( drop 6 ) value: 80.0 visited: 80</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:52</date>
+  <millis>1369716532805</millis>
+  <sequence>179</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:48:52</date>
+  <millis>1369716532806</millis>
+  <sequence>180</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:08</date>
+  <millis>1369716548736</millis>
+  <sequence>181</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:08</date>
+  <millis>1369716548737</millis>
+  <sequence>182</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:08</date>
+  <millis>1369716548737</millis>
+  <sequence>183</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:08</date>
+  <millis>1369716548737</millis>
+  <sequence>184</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:08</date>
+  <millis>1369716548737</millis>
+  <sequence>185</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:18</date>
+  <millis>1369716558233</millis>
+  <sequence>186</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>move: ( drop 5 ) value: 156.0 visited: 156</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:18</date>
+  <millis>1369716558233</millis>
+  <sequence>187</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>move: ( drop 2 ) value: 101.0 visited: 101</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:18</date>
+  <millis>1369716558234</millis>
+  <sequence>188</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>move: ( drop 1 ) value: 61.0 visited: 61</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:18</date>
+  <millis>1369716558234</millis>
+  <sequence>189</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>move: ( drop 8 ) value: 134.0 visited: 134</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:18</date>
+  <millis>1369716558234</millis>
+  <sequence>190</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>move: ( drop 3 ) value: 116.0 visited: 116</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:18</date>
+  <millis>1369716558235</millis>
+  <sequence>191</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>move: ( drop 7 ) value: 86664.0 visited: 86664</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:18</date>
+  <millis>1369716558235</millis>
+  <sequence>192</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>24</thread>
+  <message>move: ( drop 6 ) value: 126.0 visited: 126</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:19</date>
+  <millis>1369716559233</millis>
+  <sequence>193</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:19</date>
+  <millis>1369716559233</millis>
+  <sequence>194</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 7 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:35</date>
+  <millis>1369716575062</millis>
+  <sequence>195</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:35</date>
+  <millis>1369716575063</millis>
+  <sequence>196</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:35</date>
+  <millis>1369716575063</millis>
+  <sequence>197</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:35</date>
+  <millis>1369716575063</millis>
+  <sequence>198</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:35</date>
+  <millis>1369716575063</millis>
+  <sequence>199</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9492</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:44</date>
+  <millis>1369716584556</millis>
+  <sequence>200</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>move: ( drop 5 ) value: 117.0 visited: 117</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:44</date>
+  <millis>1369716584556</millis>
+  <sequence>201</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>move: ( drop 2 ) value: 86214.0 visited: 86214</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:44</date>
+  <millis>1369716584557</millis>
+  <sequence>202</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>move: ( drop 1 ) value: 46.0 visited: 46</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:44</date>
+  <millis>1369716584557</millis>
+  <sequence>203</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>move: ( drop 8 ) value: 75.0 visited: 75</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:44</date>
+  <millis>1369716584557</millis>
+  <sequence>204</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>move: ( drop 3 ) value: 37.0 visited: 37</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:44</date>
+  <millis>1369716584558</millis>
+  <sequence>205</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>move: ( drop 7 ) value: 142.0 visited: 142</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:44</date>
+  <millis>1369716584558</millis>
+  <sequence>206</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>25</thread>
+  <message>move: ( drop 6 ) value: 205.0 visited: 205</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:45</date>
+  <millis>1369716585556</millis>
+  <sequence>207</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:49:45</date>
+  <millis>1369716585556</millis>
+  <sequence>208</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:01</date>
+  <millis>1369716601386</millis>
+  <sequence>209</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:01</date>
+  <millis>1369716601386</millis>
+  <sequence>210</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:01</date>
+  <millis>1369716601386</millis>
+  <sequence>211</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:01</date>
+  <millis>1369716601387</millis>
+  <sequence>212</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:01</date>
+  <millis>1369716601387</millis>
+  <sequence>213</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9493</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:10</date>
+  <millis>1369716610881</millis>
+  <sequence>214</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>move: ( drop 5 ) value: 101.0 visited: 101</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:10</date>
+  <millis>1369716610881</millis>
+  <sequence>215</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>move: ( drop 2 ) value: 64.0 visited: 64</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:10</date>
+  <millis>1369716610881</millis>
+  <sequence>216</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>move: ( drop 1 ) value: 73.0 visited: 73</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:10</date>
+  <millis>1369716610882</millis>
+  <sequence>217</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>move: ( drop 8 ) value: 76.0 visited: 76</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:10</date>
+  <millis>1369716610882</millis>
+  <sequence>218</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>move: ( drop 3 ) value: 4396.0 visited: 4396</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:10</date>
+  <millis>1369716610882</millis>
+  <sequence>219</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>move: ( drop 7 ) value: 125.0 visited: 125</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:10</date>
+  <millis>1369716610883</millis>
+  <sequence>220</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>26</thread>
+  <message>move: ( drop 6 ) value: 56.0 visited: 56</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:11</date>
+  <millis>1369716611880</millis>
+  <sequence>221</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:11</date>
+  <millis>1369716611881</millis>
+  <sequence>222</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:27</date>
+  <millis>1369716627702</millis>
+  <sequence>223</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:27</date>
+  <millis>1369716627702</millis>
+  <sequence>224</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:27</date>
+  <millis>1369716627702</millis>
+  <sequence>225</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:27</date>
+  <millis>1369716627703</millis>
+  <sequence>226</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:27</date>
+  <millis>1369716627703</millis>
+  <sequence>227</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9488</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:37</date>
+  <millis>1369716637191</millis>
+  <sequence>228</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>move: ( drop 5 ) value: 22567.0 visited: 22567</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:37</date>
+  <millis>1369716637192</millis>
+  <sequence>229</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>move: ( drop 2 ) value: 312.0 visited: 312</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:37</date>
+  <millis>1369716637192</millis>
+  <sequence>230</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>move: ( drop 1 ) value: 332.0 visited: 332</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:37</date>
+  <millis>1369716637192</millis>
+  <sequence>231</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>move: ( drop 8 ) value: 255.0 visited: 255</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:37</date>
+  <millis>1369716637193</millis>
+  <sequence>232</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>move: ( drop 3 ) value: 215.0 visited: 215</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:37</date>
+  <millis>1369716637193</millis>
+  <sequence>233</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>move: ( drop 7 ) value: 222.0 visited: 222</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:37</date>
+  <millis>1369716637193</millis>
+  <sequence>234</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>27</thread>
+  <message>move: ( drop 6 ) value: 187.0 visited: 187</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:38</date>
+  <millis>1369716638191</millis>
+  <sequence>235</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:38</date>
+  <millis>1369716638192</millis>
+  <sequence>236</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:54</date>
+  <millis>1369716654334</millis>
+  <sequence>237</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:54</date>
+  <millis>1369716654334</millis>
+  <sequence>238</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 6 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:54</date>
+  <millis>1369716654334</millis>
+  <sequence>239</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:54</date>
+  <millis>1369716654334</millis>
+  <sequence>240</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:50:54</date>
+  <millis>1369716654335</millis>
+  <sequence>241</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9493</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:03</date>
+  <millis>1369716663828</millis>
+  <sequence>242</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>move: ( drop 5 ) value: 400.0 visited: 400</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:03</date>
+  <millis>1369716663829</millis>
+  <sequence>243</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>move: ( drop 2 ) value: 167.0 visited: 167</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:03</date>
+  <millis>1369716663829</millis>
+  <sequence>244</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>move: ( drop 1 ) value: 140.0 visited: 140</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:03</date>
+  <millis>1369716663830</millis>
+  <sequence>245</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>move: ( drop 8 ) value: 141.0 visited: 141</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:03</date>
+  <millis>1369716663830</millis>
+  <sequence>246</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>move: ( drop 3 ) value: 312.0 visited: 312</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:03</date>
+  <millis>1369716663830</millis>
+  <sequence>247</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>move: ( drop 7 ) value: 199.0 visited: 199</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:03</date>
+  <millis>1369716663831</millis>
+  <sequence>248</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>28</thread>
+  <message>move: ( drop 6 ) value: 97871.0 visited: 97871</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:04</date>
+  <millis>1369716664828</millis>
+  <sequence>249</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:51:04</date>
+  <millis>1369716664829</millis>
+  <sequence>250</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 6 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:56:55</date>
+  <millis>1369717015609</millis>
+  <sequence>251</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:56:55</date>
+  <millis>1369717015609</millis>
+  <sequence>252</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:56:55</date>
+  <millis>1369717015610</millis>
+  <sequence>253</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:56:55</date>
+  <millis>1369717015610</millis>
+  <sequence>254</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:56:55</date>
+  <millis>1369717015610</millis>
+  <sequence>255</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025106</millis>
+  <sequence>256</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 3 ) value: 213.0 visited: 213</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025106</millis>
+  <sequence>257</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 1 ) value: 171.0 visited: 171</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025107</millis>
+  <sequence>258</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 5 ) value: 171.0 visited: 171</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025107</millis>
+  <sequence>259</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 4 ) value: 491.0 visited: 491</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025107</millis>
+  <sequence>260</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 8 ) value: 149.0 visited: 149</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025108</millis>
+  <sequence>261</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 2 ) value: 231.0 visited: 231</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025108</millis>
+  <sequence>262</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 6 ) value: 347.0 visited: 347</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:05</date>
+  <millis>1369717025108</millis>
+  <sequence>263</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>29</thread>
+  <message>move: ( drop 7 ) value: 230.0 visited: 230</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:06</date>
+  <millis>1369717026105</millis>
+  <sequence>264</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:06</date>
+  <millis>1369717026106</millis>
+  <sequence>265</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:21</date>
+  <millis>1369717041929</millis>
+  <sequence>266</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:21</date>
+  <millis>1369717041930</millis>
+  <sequence>267</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:21</date>
+  <millis>1369717041930</millis>
+  <sequence>268</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:21</date>
+  <millis>1369717041930</millis>
+  <sequence>269</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:21</date>
+  <millis>1369717041930</millis>
+  <sequence>270</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9495</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051427</millis>
+  <sequence>271</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 3 ) value: 158.0 visited: 158</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051427</millis>
+  <sequence>272</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 1 ) value: 389.0 visited: 389</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051428</millis>
+  <sequence>273</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 5 ) value: 444.0 visited: 444</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051428</millis>
+  <sequence>274</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 4 ) value: 402.0 visited: 402</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051428</millis>
+  <sequence>275</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 8 ) value: 116.0 visited: 116</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051429</millis>
+  <sequence>276</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 2 ) value: 271.0 visited: 271</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051429</millis>
+  <sequence>277</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 6 ) value: 160.0 visited: 160</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:31</date>
+  <millis>1369717051429</millis>
+  <sequence>278</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>30</thread>
+  <message>move: ( drop 7 ) value: 299.0 visited: 299</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:32</date>
+  <millis>1369717052428</millis>
+  <sequence>279</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:32</date>
+  <millis>1369717052428</millis>
+  <sequence>280</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 5 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:48</date>
+  <millis>1369717068255</millis>
+  <sequence>281</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:48</date>
+  <millis>1369717068255</millis>
+  <sequence>282</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:48</date>
+  <millis>1369717068255</millis>
+  <sequence>283</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:48</date>
+  <millis>1369717068255</millis>
+  <sequence>284</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:48</date>
+  <millis>1369717068256</millis>
+  <sequence>285</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077751</millis>
+  <sequence>286</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 3 ) value: 239.0 visited: 239</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077752</millis>
+  <sequence>287</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 1 ) value: 237.0 visited: 237</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077752</millis>
+  <sequence>288</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 5 ) value: 302.0 visited: 302</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077752</millis>
+  <sequence>289</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 4 ) value: 266.0 visited: 266</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077753</millis>
+  <sequence>290</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 8 ) value: 297.0 visited: 297</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077753</millis>
+  <sequence>291</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 2 ) value: 371.0 visited: 371</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077753</millis>
+  <sequence>292</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 6 ) value: 201.0 visited: 201</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:57</date>
+  <millis>1369717077753</millis>
+  <sequence>293</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>31</thread>
+  <message>move: ( drop 7 ) value: 337.0 visited: 337</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:58</date>
+  <millis>1369717078750</millis>
+  <sequence>294</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:57:58</date>
+  <millis>1369717078751</millis>
+  <sequence>295</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:14</date>
+  <millis>1369717094464</millis>
+  <sequence>296</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:14</date>
+  <millis>1369717094464</millis>
+  <sequence>297</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:14</date>
+  <millis>1369717094464</millis>
+  <sequence>298</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:14</date>
+  <millis>1369717094464</millis>
+  <sequence>299</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:14</date>
+  <millis>1369717094465</millis>
+  <sequence>300</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103960</millis>
+  <sequence>301</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 3 ) value: 801.0 visited: 801</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103961</millis>
+  <sequence>302</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 1 ) value: 134.0 visited: 134</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103961</millis>
+  <sequence>303</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 5 ) value: 401.0 visited: 401</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103961</millis>
+  <sequence>304</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 4 ) value: 390.0 visited: 390</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103962</millis>
+  <sequence>305</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 8 ) value: 213.0 visited: 213</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103962</millis>
+  <sequence>306</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 2 ) value: 310.0 visited: 310</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103962</millis>
+  <sequence>307</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 6 ) value: 99.0 visited: 99</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:23</date>
+  <millis>1369717103963</millis>
+  <sequence>308</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>32</thread>
+  <message>move: ( drop 7 ) value: 216.0 visited: 216</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:24</date>
+  <millis>1369717104959</millis>
+  <sequence>309</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:24</date>
+  <millis>1369717104960</millis>
+  <sequence>310</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:40</date>
+  <millis>1369717120681</millis>
+  <sequence>311</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:40</date>
+  <millis>1369717120681</millis>
+  <sequence>312</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:40</date>
+  <millis>1369717120681</millis>
+  <sequence>313</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:40</date>
+  <millis>1369717120681</millis>
+  <sequence>314</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:40</date>
+  <millis>1369717120682</millis>
+  <sequence>315</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9493</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130177</millis>
+  <sequence>316</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 3 ) value: 861.0 visited: 861</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130177</millis>
+  <sequence>317</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 1 ) value: 127.0 visited: 127</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130177</millis>
+  <sequence>318</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 5 ) value: 214.0 visited: 214</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130178</millis>
+  <sequence>319</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 4 ) value: 719.0 visited: 719</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130178</millis>
+  <sequence>320</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 8 ) value: 142.0 visited: 142</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130178</millis>
+  <sequence>321</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 2 ) value: 168.0 visited: 168</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130179</millis>
+  <sequence>322</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 6 ) value: 163.0 visited: 163</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:50</date>
+  <millis>1369717130179</millis>
+  <sequence>323</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>33</thread>
+  <message>move: ( drop 7 ) value: 159.0 visited: 159</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:51</date>
+  <millis>1369717131175</millis>
+  <sequence>324</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:58:51</date>
+  <millis>1369717131176</millis>
+  <sequence>325</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:07</date>
+  <millis>1369717147008</millis>
+  <sequence>326</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:07</date>
+  <millis>1369717147008</millis>
+  <sequence>327</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:07</date>
+  <millis>1369717147009</millis>
+  <sequence>328</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:07</date>
+  <millis>1369717147009</millis>
+  <sequence>329</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:07</date>
+  <millis>1369717147009</millis>
+  <sequence>330</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9489</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156499</millis>
+  <sequence>331</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 3 ) value: 96.0 visited: 96</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156500</millis>
+  <sequence>332</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 1 ) value: 160.0 visited: 160</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156500</millis>
+  <sequence>333</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 5 ) value: 99.0 visited: 99</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156501</millis>
+  <sequence>334</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 4 ) value: 200.0 visited: 200</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156501</millis>
+  <sequence>335</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 8 ) value: 107.0 visited: 107</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156501</millis>
+  <sequence>336</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 2 ) value: 107.0 visited: 107</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156501</millis>
+  <sequence>337</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 6 ) value: 2230.0 visited: 2230</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:16</date>
+  <millis>1369717156502</millis>
+  <sequence>338</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>34</thread>
+  <message>move: ( drop 7 ) value: 100.0 visited: 100</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:17</date>
+  <millis>1369717157499</millis>
+  <sequence>339</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:17</date>
+  <millis>1369717157499</millis>
+  <sequence>340</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 6 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:33</date>
+  <millis>1369717173320</millis>
+  <sequence>341</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:33</date>
+  <millis>1369717173321</millis>
+  <sequence>342</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:33</date>
+  <millis>1369717173321</millis>
+  <sequence>343</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:33</date>
+  <millis>1369717173321</millis>
+  <sequence>344</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:33</date>
+  <millis>1369717173321</millis>
+  <sequence>345</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9492</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182814</millis>
+  <sequence>346</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 3 ) value: 174.0 visited: 174</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182814</millis>
+  <sequence>347</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 1 ) value: 185.0 visited: 185</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182815</millis>
+  <sequence>348</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 5 ) value: 363.0 visited: 363</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182815</millis>
+  <sequence>349</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 4 ) value: 1281.0 visited: 1281</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182815</millis>
+  <sequence>350</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 8 ) value: 120.0 visited: 120</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182816</millis>
+  <sequence>351</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 2 ) value: 179.0 visited: 179</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182816</millis>
+  <sequence>352</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 6 ) value: 330.0 visited: 330</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:42</date>
+  <millis>1369717182816</millis>
+  <sequence>353</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>35</thread>
+  <message>move: ( drop 7 ) value: 150.0 visited: 150</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:43</date>
+  <millis>1369717183814</millis>
+  <sequence>354</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:43</date>
+  <millis>1369717183814</millis>
+  <sequence>355</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:59</date>
+  <millis>1369717199850</millis>
+  <sequence>356</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:59</date>
+  <millis>1369717199850</millis>
+  <sequence>357</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:59</date>
+  <millis>1369717199851</millis>
+  <sequence>358</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:59</date>
+  <millis>1369717199851</millis>
+  <sequence>359</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T21:59:59</date>
+  <millis>1369717199851</millis>
+  <sequence>360</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209347</millis>
+  <sequence>361</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 3 ) value: 251.0 visited: 251</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209347</millis>
+  <sequence>362</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 1 ) value: 436.0 visited: 436</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209347</millis>
+  <sequence>363</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 5 ) value: 449.0 visited: 449</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209348</millis>
+  <sequence>364</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 4 ) value: 263.0 visited: 263</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209348</millis>
+  <sequence>365</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 8 ) value: 259.0 visited: 259</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209348</millis>
+  <sequence>366</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 2 ) value: 505.0 visited: 505</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209349</millis>
+  <sequence>367</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 6 ) value: 389.0 visited: 389</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:09</date>
+  <millis>1369717209349</millis>
+  <sequence>368</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>36</thread>
+  <message>move: ( drop 7 ) value: 205.0 visited: 205</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:10</date>
+  <millis>1369717210345</millis>
+  <sequence>369</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:10</date>
+  <millis>1369717210346</millis>
+  <sequence>370</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:25</date>
+  <millis>1369717225957</millis>
+  <sequence>371</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:25</date>
+  <millis>1369717225957</millis>
+  <sequence>372</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 3 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:25</date>
+  <millis>1369717225958</millis>
+  <sequence>373</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:25</date>
+  <millis>1369717225958</millis>
+  <sequence>374</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:25</date>
+  <millis>1369717225958</millis>
+  <sequence>375</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9490</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235450</millis>
+  <sequence>376</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 3 ) value: 391.0 visited: 391</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235451</millis>
+  <sequence>377</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 1 ) value: 365.0 visited: 365</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235451</millis>
+  <sequence>378</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 5 ) value: 554.0 visited: 554</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235451</millis>
+  <sequence>379</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 4 ) value: 427.0 visited: 427</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235452</millis>
+  <sequence>380</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 8 ) value: 375.0 visited: 375</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235452</millis>
+  <sequence>381</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 2 ) value: 1321.0 visited: 1321</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235452</millis>
+  <sequence>382</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 6 ) value: 419.0 visited: 419</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:35</date>
+  <millis>1369717235453</millis>
+  <sequence>383</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>37</thread>
+  <message>move: ( drop 7 ) value: 310.0 visited: 310</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:36</date>
+  <millis>1369717236448</millis>
+  <sequence>384</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:00:36</date>
+  <millis>1369717236449</millis>
+  <sequence>385</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 2 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:17</date>
+  <millis>1369717277953</millis>
+  <sequence>386</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:17</date>
+  <millis>1369717277953</millis>
+  <sequence>387</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 1 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:17</date>
+  <millis>1369717277953</millis>
+  <sequence>388</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:17</date>
+  <millis>1369717277953</millis>
+  <sequence>389</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:17</date>
+  <millis>1369717277954</millis>
+  <sequence>390</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9497</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287454</millis>
+  <sequence>391</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 1 ) value: 91.0 visited: 91</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287454</millis>
+  <sequence>392</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 2 ) value: 327.0 visited: 327</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287455</millis>
+  <sequence>393</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 8 ) value: 86.0 visited: 86</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287455</millis>
+  <sequence>394</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 6 ) value: 162.0 visited: 162</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287455</millis>
+  <sequence>395</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 4 ) value: 405.0 visited: 405</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287456</millis>
+  <sequence>396</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 5 ) value: 376.0 visited: 376</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287456</millis>
+  <sequence>397</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 7 ) value: 199.0 visited: 199</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:27</date>
+  <millis>1369717287456</millis>
+  <sequence>398</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>38</thread>
+  <message>move: ( drop 3 ) value: 321.0 visited: 321</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:28</date>
+  <millis>1369717288451</millis>
+  <sequence>399</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:28</date>
+  <millis>1369717288452</millis>
+  <sequence>400</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 4 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:50</date>
+  <millis>1369717310021</millis>
+  <sequence>401</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:50</date>
+  <millis>1369717310022</millis>
+  <sequence>402</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 1 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:50</date>
+  <millis>1369717310022</millis>
+  <sequence>403</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:50</date>
+  <millis>1369717310022</millis>
+  <sequence>404</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:50</date>
+  <millis>1369717310022</millis>
+  <sequence>405</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9496</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319522</millis>
+  <sequence>406</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 1 ) value: 231.0 visited: 231</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319522</millis>
+  <sequence>407</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 2 ) value: 263.0 visited: 263</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319522</millis>
+  <sequence>408</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 8 ) value: 359.0 visited: 359</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319523</millis>
+  <sequence>409</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 6 ) value: 290.0 visited: 290</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319523</millis>
+  <sequence>410</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 4 ) value: 265.0 visited: 265</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319523</millis>
+  <sequence>411</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 5 ) value: 259.0 visited: 259</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319524</millis>
+  <sequence>412</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 7 ) value: 236.0 visited: 236</message>
+</record>
+<record>
+  <date>2013-05-27T22:01:59</date>
+  <millis>1369717319524</millis>
+  <sequence>413</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>players.BryceMonteCarloTreeSearch</class>
+  <method>run</method>
+  <thread>39</thread>
+  <message>move: ( drop 3 ) value: 214.0 visited: 214</message>
+</record>
+<record>
+  <date>2013-05-27T22:02:00</date>
+  <millis>1369717320519</millis>
+  <sequence>414</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Monte Carlo--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:02:00</date>
+  <millis>1369717320519</millis>
+  <sequence>415</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>best move: ( drop 8 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:02:07</date>
+  <millis>1369717327591</millis>
+  <sequence>416</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>--------Best Move after Minimiax--------</message>
+</record>
+<record>
+  <date>2013-05-27T22:02:07</date>
+  <millis>1369717327591</millis>
+  <sequence>417</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Sure move is ( drop 1 )</message>
+</record>
+<record>
+  <date>2013-05-27T22:02:07</date>
+  <millis>1369717327592</millis>
+  <sequence>418</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>with the sure score of 0.0</message>
+</record>
+<record>
+  <date>2013-05-27T22:02:07</date>
+  <millis>1369717327592</millis>
+  <sequence>419</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>Starting Monte Carlo</message>
+</record>
+<record>
+  <date>2013-05-27T22:02:07</date>
+  <millis>1369717327592</millis>
+  <sequence>420</sequence>
+  <logger>game1369715750088</logger>
+  <level>INFO</level>
+  <class>org.ggp.base.player.gamer.statemachine.PlatypusPlayer.PlatypusPlayer</class>
+  <method>stateMachineSelectMove</method>
+  <thread>11</thread>
+  <message>PAUSING PLATYPUS FOR 9494</message>
+</record>
+</log>

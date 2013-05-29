@@ -1,0 +1,39 @@
+digraph propNet
+{
+	"@117c50b9"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@117c50b9"->"@3e93f13f"; 
+	"@46013dd8"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@46013dd8"->"@3bc634b9"; 
+	"@4f13f501"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@4f13f501"->"@69ba045"; 
+	"@3f94a1f"[shape=circle, style= filled, fillcolor=white, label="( does robot ( b 5 ) )"]; "@3f94a1f"->"@2180e7a4"; "@3f94a1f"->"@63713b42"; "@3f94a1f"->"@3f70119f"; 
+	"@205074de"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@205074de"->"@244e5056"; 
+	"@51af7c57"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@51af7c57"->"@12fa7181"; 
+	"@3bc634b9"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@3bc634b9"->"@51af7c57"; 
+	"@12fa7181"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@12fa7181"->"@6ad21538"; 
+	"@2c164804"[shape=circle, style= filled, fillcolor=white, label="( true ( q 5 ) )"]; "@2c164804"->"@76c7cadf"; "@2c164804"->"@46013dd8"; "@2c164804"->"@1d7aa55b"; "@2c164804"->"@3f70119f"; "@2c164804"->"@2ffecaeb"; "@2c164804"->"@19176e5f"; 
+	"@72e8e8f9"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@72e8e8f9"->"@1740d415"; "@72e8e8f9"->"@19176e5f"; 
+	"@53371566"[shape=circle, style= filled, fillcolor=white, label="( goal robot 0 )"]; 
+	"@76c7cadf"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@76c7cadf"->"@4b5a142f"; "@76c7cadf"->"@147ae747"; 
+	"@2180e7a4"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@2180e7a4"->"@244e5056"; 
+	"@14b03ea"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@14b03ea"->"@5e1645b9"; 
+	"@63713b42"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@63713b42"->"@1ee99d0f"; "@63713b42"->"@19176e5f"; 
+	"@69ba045"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@69ba045"->"@53371566"; 
+	"@73204425"[shape=circle, style= filled, fillcolor=white, label="terminal"]; 
+	"@3e93f13f"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@3e93f13f"->"@2c164804"; 
+	"@4b5a142f"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@4b5a142f"->"@73204425"; "@4b5a142f"->"@2abbaa16"; 
+	"@6ad21538"[shape=circle, style= filled, fillcolor=white, label="( true ( r 5 ) )"]; "@6ad21538"->"@76c7cadf"; "@6ad21538"->"@4f13f501"; "@6ad21538"->"@205074de"; "@6ad21538"->"@1740d415"; "@6ad21538"->"@2ffecaeb"; 
+	"@63edf84f"[shape=circle, style= filled, fillcolor=white, label="( does robot ( a 5 ) )"]; "@63edf84f"->"@14b03ea"; "@63edf84f"->"@12b27c38"; 
+	"@48423606"[shape=circle, style= filled, fillcolor=white, label="( does robot ( c 5 ) )"]; "@48423606"->"@46013dd8"; "@48423606"->"@205074de"; "@48423606"->"@72e8e8f9"; 
+	"@2bd648e2"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@2bd648e2"->"@14b03ea"; "@2bd648e2"->"@69ba045"; 
+	"@2ffecaeb"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@2ffecaeb"->"@2abbaa16"; 
+	"@36d83365"[shape=circle, style= filled, fillcolor=white, label="( true ( p 5 ) )"]; "@36d83365"->"@76c7cadf"; "@36d83365"->"@2180e7a4"; "@36d83365"->"@2bd648e2"; "@36d83365"->"@2ffecaeb"; "@36d83365"->"@1ee99d0f"; 
+	"@5e1645b9"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@5e1645b9"->"@83ba4f1"; 
+	"@19176e5f"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@19176e5f"->"@244e5056"; 
+	"@2abbaa16"[shape=circle, style= filled, fillcolor=white, label="( goal robot 100 )"]; 
+	"@1d7aa55b"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@1d7aa55b"->"@69ba045"; 
+	"@fd12614"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@fd12614"->"@36d83365"; 
+	"@3f70119f"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@3f70119f"->"@5e1645b9"; 
+	"@244e5056"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@244e5056"->"@117c50b9"; 
+	"@1740d415"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@1740d415"->"@3bc634b9"; 
+	"@12b27c38"[shape=invtriangle, style= filled, fillcolor=grey, label="NOT"]; "@12b27c38"->"@1ee99d0f"; 
+	"@1ee99d0f"[shape=invhouse, style= filled, fillcolor=grey, label="AND"]; "@1ee99d0f"->"@5e1645b9"; 
+	"@83ba4f1"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@83ba4f1"->"@fd12614"; 
+}

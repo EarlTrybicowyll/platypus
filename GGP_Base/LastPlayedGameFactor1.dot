@@ -1,0 +1,27 @@
+digraph propNet
+{
+	"@2653aed4"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@2653aed4"->"@1494b146"; 
+	"@66e9b6a"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@66e9b6a"->"@27d314cc"; 
+	"@2e1474fc"[shape=circle, style= filled, fillcolor=white, label="( true ( step 7 ) )"]; "@2e1474fc"->"@31930611"; "@2e1474fc"->"@147ae747"; 
+	"@72cc5002"[shape=circle, style= filled, fillcolor=white, label="( true ( step 2 ) )"]; "@72cc5002"->"@28caea19"; 
+	"@1494b146"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@1494b146"->"@2e1474fc"; 
+	"@31930611"[shape=ellipse, style= filled, fillcolor=grey, label="OR"]; "@31930611"->"@2abbaa16"; "@31930611"->"@6e3404f"; 
+	"@42bc0eba"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@42bc0eba"->"@617e53c9"; 
+	"@366aa95b"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@366aa95b"->"@5cef0cdb"; 
+	"@6e3404f"[shape=circle, style= filled, fillcolor=white, label="terminal"]; 
+	"@4f980c26"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@4f980c26"->"@3aeebf17"; 
+	"@7a0aae8a"[shape=circle, style= filled, fillcolor=white, label="( true ( step 6 ) )"]; "@7a0aae8a"->"@2653aed4"; 
+	"@576eeb9"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@576eeb9"->"@7a0aae8a"; 
+	"@27d314cc"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@27d314cc"->"@5d1d20d3"; 
+	"@28caea19"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@28caea19"->"@366aa95b"; 
+	"@2abbaa16"[shape=circle, style= filled, fillcolor=white, label="( goal robot 100 )"]; 
+	"@3aeebf17"[shape=circle, style= filled, fillcolor=white, label="( true ( step 1 ) )"]; "@3aeebf17"->"@6fa8bd74"; 
+	"@14a2da07"[shape=circle, style= filled, fillcolor=white, label="init"]; "@14a2da07"->"@4f980c26"; 
+	"@5cef0cdb"[shape=circle, style= filled, fillcolor=white, label="( true ( step 3 ) )"]; "@5cef0cdb"->"@66e9b6a"; 
+	"@12fcdf5"[shape=circle, style= filled, fillcolor=white, label="( true ( step 5 ) )"]; "@12fcdf5"->"@66a33414"; 
+	"@5d1d20d3"[shape=circle, style= filled, fillcolor=white, label="( true ( step 4 ) )"]; "@5d1d20d3"->"@42bc0eba"; 
+	"@6fa8bd74"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@6fa8bd74"->"@5d51fe8a"; 
+	"@5d51fe8a"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@5d51fe8a"->"@72cc5002"; 
+	"@66a33414"[shape=circle, style= filled, fillcolor=white, label="anon"]; "@66a33414"->"@576eeb9"; 
+	"@617e53c9"[shape=box, style= filled, fillcolor=grey, label="TRANSITION"]; "@617e53c9"->"@12fcdf5"; 
+}
